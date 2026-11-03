@@ -1,0 +1,8 @@
+{
+  "name": "chronos-1-0-automation-runtime",
+  "private": true,
+  "description": "Chronos 1.0 — runtime local opcional n8n",
+  "dependencies": {
+    "n8n": "2.44.6"
+  }
+}

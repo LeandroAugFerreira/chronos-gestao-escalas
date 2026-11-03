@@ -1,0 +1,22 @@
+{
+  "product": "Chronos 1.0",
+  "date": "2026-10-24",
+  "phase": 2,
+  "backend_tests": { "passed": 52, "failed": 0, "skipped": 0, "warnings": 1, "seconds": 45.09 },
+  "database_profiles_executed": ["sqlite-file", "postgresql-17.11-real"],
+  "alembic_head": "004_idempotency",
+  "migrations": 4,
+  "tables": 23,
+  "upgrade_downgrade_schema_comparison": "passed-both-databases",
+  "seed": { "employees": 350, "departments": 19, "job_roles": 38, "idempotent": true },
+  "http": { "readiness": 200, "protected_employees_without_auth": 401, "openapi": 200 },
+  "frontend_build": "passed",
+  "pip_check": "passed",
+  "powershell_syntax": "passed",
+  "portable_postgres_start_test_stop_script": "passed",
+  "docker_compose_execution": "not-executed-docker-unavailable",
+  "browser_visual_qa": "not-executed",
+  "default_admin_password": null,
+  "published": false,
+  "production_ready": false
+}

@@ -1,0 +1,227 @@
+{
+  "product": "Chronos 1.0",
+  "reference_date": "2026-10-27",
+  "html_links_resources_and_anchors_verified": true,
+  "old_project_media_unchanged": true,
+  "source_package_sha256": "04e6f11b99e4656e5c0aa475c76ded02a3757cada0ad7d26bcbfad55c0f1255a",
+  "manual_pages": 9,
+  "manual_private_paths_and_admin_credentials_removed": true,
+  "media": {
+    "resumo": {
+      "seconds": 21.416667,
+      "video": "h264",
+      "audio": "aac",
+      "captions": [
+        "pt-BR",
+        "en"
+      ],
+      "visuals": "explanatory diagrams, not application screenshots"
+    },
+    "apresentacao": {
+      "seconds": 82.291667,
+      "video": "h264",
+      "audio": "aac",
+      "captions": [
+        "pt-BR",
+        "en"
+      ],
+      "visuals": "explanatory diagrams, not application screenshots"
+    }
+  },
+  "browser_visual_qa": false,
+  "application_published": false,
+  "files": {
+    "assets/chronos-featured.css": "1bc9acaf660b2797d3d4284ea085d945b68044c3aea87ad3506dd29bf8a7eca2",
+    "assets/chronos.css": "a858d9fa74ad3615fd183574e81a761208273778e8a285b440726f2d0117ae1d",
+    "chronos.html": "b1b48308d20e117f78cb4ee8866f7e965a1184bff77d2d7eb2a17f24a309ebb7",
+    "docs/apresentacoes.md": "38805aad672de75090301a6d4b720498bb788affce8168d408f4f32d94fefb35",
+    "docs/chronos.md": "54ebd612685aeac81e9335832f309528d13328ad5eb070cf473b4520a486ca62",
+    "downloads/Chronos-1.0-Manual-de-Uso.pdf": "1d32730f1d7c694429d9a4194c509d97f2cea2a515e48a395e1205adadd6b682",
+    "downloads/Chronos-1.0-codigo-fonte.zip": "04e6f11b99e4656e5c0aa475c76ded02a3757cada0ad7d26bcbfad55c0f1255a",
+    "downloads/Chronos-1.0-manifesto.json": "297421c577fd9e5b7c66319b34e8298df9022f3295a269bcfc0684450300f716",
+    "img/teasers/chronos-completo.jpg": "67b6add256a257047bc71ac9be57e1d7ccaaf1b139bd0d289a67cf99c7cc28fe",
+    "img/teasers/chronos.jpg": "50e7e083a2c7863ca418cb42f396fe1240982425a853706bbd6723b2a7e5133d",
+    "index.html": "31c71d1e203309591382e3f61859425b1328de5d521ae1c1340d38792ccb3643",
+    "media/chronos-apresentacao-cenas.json": "858860ef435c3a579d26751965b65a00010adb4be50c6240466db13a80e77848",
+    "media/chronos-apresentacao-en.vtt": "6a46d5dd8818cfd50b6c4ffbcd35129ed0a8a6d88a8aa6b79f944bd2261f3c43",
+    "media/chronos-apresentacao-pt.vtt": "d60a3bade6016bf082b47dd85db316cc69c4695ab79e483a6278968c60e3cfe4",
+    "media/chronos-apresentacao.mp4": "ce2c97fc4a4d79763dc3f84c4c651637d30d59792fa4b56ccfae3f2400850c8f",
+    "media/chronos-media.json": "9cf971629506b25c4f3d34435c592e88216554188149590d96234b5f933681fe",
+    "media/chronos-resumo-cenas.json": "12115335458bbce471ce1fab3a56c900ad60004b7102f841a30acb3f70eb5ecf",
+    "media/chronos-resumo-en.vtt": "d78413c2440eaa836f5e21ac292b475fa1a30fdf91df06d75c2df1696929476d",
+    "media/chronos-resumo-pt.vtt": "308bb602e5203146158b9644d17286546620a9a616b9e9249bd7320cb29f2336",
+    "media/chronos-resumo.mp4": "92baa8419e0d3cf684d5d3f99859bb499b91b1a409f8007161f72ec2fa3ab714"
+  },
+  "administrative_secret_excluded": true,
+  "personal_email_not_added_to_artifacts": true,
+  "existing_public_contact_preserved": true,
+  "extracted_source_smoke": {
+    "product": "Chronos 1.0",
+    "extracted_package_imported": true,
+    "fresh_database_migrated": true,
+    "schema": "010_pattern_revision",
+    "seed_idempotent": true,
+    "employees": 350,
+    "departments": 19,
+    "automations_enabled": 0,
+    "login_verified": true,
+    "unauthorized_rejected": true,
+    "main_database_modified": false,
+    "dependencies": "existing validated runtime reused; no clean dependency installation",
+    "browser_used": false
+  },
+  "portfolio_commit": "5be6bf792f85100ef3de5c5a91b790082b50ead2",
+  "portfolio_repository_updated": true,
+  "portfolio_publication_verified": true,
+  "portfolio_url": "https://leandroaugferreira.github.io/#chronos",
+  "project_url": "https://leandroaugferreira.github.io/chronos.html#manual",
+  "manual_url": "https://leandroaugferreira.github.io/downloads/Chronos-1.0-Manual-de-Uso.pdf",
+  "public_https_assets_verified": [
+    {
+      "path": "assets/chronos-featured.css",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "1bc9acaf660b2797d3d4284ea085d945b68044c3aea87ad3506dd29bf8a7eca2",
+      "bytes": 881
+    },
+    {
+      "path": "assets/chronos.css",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "a858d9fa74ad3615fd183574e81a761208273778e8a285b440726f2d0117ae1d",
+      "bytes": 4902
+    },
+    {
+      "path": "chronos.html",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "1395d039ea264c1bfc09d957af33a6c2f8ff986bf9919a8ee55a097536262cec",
+      "bytes": 32568
+    },
+    {
+      "path": "docs/apresentacoes.md",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "9d236b701b8fae576632772a526f7eca9a05a9521e812eeb85d27976bd49ad33",
+      "bytes": 4013
+    },
+    {
+      "path": "docs/chronos.md",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "54ebd612685aeac81e9335832f309528d13328ad5eb070cf473b4520a486ca62",
+      "bytes": 1754
+    },
+    {
+      "path": "downloads/Chronos-1.0-Manual-de-Uso.pdf",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "1d32730f1d7c694429d9a4194c509d97f2cea2a515e48a395e1205adadd6b682",
+      "bytes": 87827
+    },
+    {
+      "path": "downloads/Chronos-1.0-codigo-fonte.zip",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "04e6f11b99e4656e5c0aa475c76ded02a3757cada0ad7d26bcbfad55c0f1255a",
+      "bytes": 1204522
+    },
+    {
+      "path": "downloads/Chronos-1.0-manifesto.json",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "297421c577fd9e5b7c66319b34e8298df9022f3295a269bcfc0684450300f716",
+      "bytes": 367
+    },
+    {
+      "path": "img/teasers/chronos-completo.jpg",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "67b6add256a257047bc71ac9be57e1d7ccaaf1b139bd0d289a67cf99c7cc28fe",
+      "bytes": 129624
+    },
+    {
+      "path": "img/teasers/chronos.jpg",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "50e7e083a2c7863ca418cb42f396fe1240982425a853706bbd6723b2a7e5133d",
+      "bytes": 129627
+    },
+    {
+      "path": "index.html",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "0d2aec45a6b82beaa07d4c5a00c4e8c08cea85d967d1ca24b6ce004be814ad99",
+      "bytes": 67572
+    },
+    {
+      "path": "media/chronos-apresentacao-cenas.json",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "6eba610070d01e9fefa986e073947b4c0ef3a01a09aa7ce26fce8f72fca499d8",
+      "bytes": 714
+    },
+    {
+      "path": "media/chronos-apresentacao-en.vtt",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "4b378b7e833d1da768bf06e3a2d5940f4905a638af0dfe92c5bab4e962837d5c",
+      "bytes": 1339
+    },
+    {
+      "path": "media/chronos-apresentacao-pt.vtt",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "73dadce0617c156a291386e6928c45762f952cdc9e7fabad95e52f7642789bb5",
+      "bytes": 1424
+    },
+    {
+      "path": "media/chronos-apresentacao.mp4",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "ce2c97fc4a4d79763dc3f84c4c651637d30d59792fa4b56ccfae3f2400850c8f",
+      "bytes": 1849599
+    },
+    {
+      "path": "media/chronos-media.json",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "bfc47112e58e09a9211cd7cf4804ae73e9f88e4a3876c1e96c61e46e3771a874",
+      "bytes": 440
+    },
+    {
+      "path": "media/chronos-resumo-cenas.json",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "c2567da5c63c46a709f038c224b7fdd91487316f3257a87bc3670df9b7165f98",
+      "bytes": 308
+    },
+    {
+      "path": "media/chronos-resumo-en.vtt",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "b794e567c71e91ea3cecb2ba541d97de3141abf454db994c15daf444fa5716d6",
+      "bytes": 421
+    },
+    {
+      "path": "media/chronos-resumo-pt.vtt",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "70b84c810c45ffebc749c95d8e8ba7286b1e16f1d7d55fa3cc053ea4b2473f13",
+      "bytes": 406
+    },
+    {
+      "path": "media/chronos-resumo.mp4",
+      "http": 200,
+      "git_blob_sha256_verified": true,
+      "sha256": "92baa8419e0d3cf684d5d3f99859bb499b91b1a409f8007161f72ec2fa3ab714",
+      "bytes": 471429
+    }
+  ],
+  "pages_workflow": {
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/LeandroAugFerreira/leandroaugferreira.github.io/actions/runs/40605812985"
+  },
+  "original_python_page_verified": true
+}

@@ -1,0 +1,85 @@
+{
+  "product": "Chronos 1.0",
+  "reference_date": "2026-10-27",
+  "phase": 10,
+  "scope": "employee_record_forms_and_dependency_review",
+  "frontend": {
+    "tests": 81,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "fddaed5116ae37eab038a8ca3cba9af2d4ef9a538fbd6ec5fee0c9b0f862e2e7"
+  },
+  "backend_records": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "8be4fb879bcc74f531caa8778ee3959d6ef003d357169ea66b6beab9142915f5"
+  },
+  "backend_profiles": [
+    "sqlite",
+    "postgresql"
+  ],
+  "package_tests": {
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "b5fe97706de8c9b1710e7675114bf17fff8ad0bfe50434c19cf4df5b2fc4fc18"
+  },
+  "frontend_new_tests": 19,
+  "backend_new_cases": 2,
+  "typescript_passed": true,
+  "frontend_build": {
+    "passed": true,
+    "modules": 2346,
+    "seconds": 27.49
+  },
+  "backend_application_sources_unchanged": true,
+  "backend_application_files_compared": 7,
+  "main_database_unchanged": true,
+  "main_database_sha256": "0fece3428fe99b20beb1ec7a6292d8d4a58b49e67ed4c86cadec3d2158d7fd04",
+  "migration_performed": false,
+  "n8n_review": {
+    "product": "Chronos 1.0",
+    "reference_date": "2026-10-27",
+    "candidate_version": "2.45.4",
+    "candidate_installed": false,
+    "candidate_started": false,
+    "scripts_executed": false,
+    "resolution_node": "v24.22.1",
+    "candidate_lock_sha256": "0949d7300776e541e224048411d4eb1557902612f949374b4e895c9358520ef2",
+    "audit_sha256": "9e87a69df90f52c8714b168eaa6e4215082999a046725ac33f957507b78a585d",
+    "counts": {
+      "low": 3,
+      "moderate": 75,
+      "high": 81,
+      "critical": 8,
+      "total": 167
+    },
+    "execution_allowed": false,
+    "scope": "npm audit sobre árvore resolvida; inclui avisos transitivos/propagados e não equivale a CVEs distintas ou exploração comprovada."
+  },
+  "browser_visual_qa": false,
+  "screenshots_captured": 0,
+  "power_bi_desktop_verified": false,
+  "full_backend_regression_rerun": false,
+  "historical_backend_suite_reference": "phase9-checks.json",
+  "package_test_environment_note": "Initial run could not create the sandbox default temp folder; 18 tests passed using a new isolated runtime basetemp.",
+  "source_sha256": {
+    "frontend/src/components/employee-records.tsx": "3e2a1461cb7feb3286ab329bac185a0e39d4fc26d6627ef89ef6b82418b25713",
+    "frontend/src/pages/employees.tsx": "d3e47c1fc1eaeb649c18853a1d177752328786f5ebba6027ec34d8eb07242424",
+    "frontend/src/tests/employee-records.test.tsx": "7a54394160417e6d445080d7982a3d08075bedc80ab158476a52f56e8155183b",
+    "backend/tests/test_homologation_records.py": "9d572fc918bcf367ebbb694f39ba35ac9debf29fe9b04c0dd04758c51c7b2dd3",
+    "automation/n8n/security-status.json": "d34e04224013fb4a7a4b7a5b2481fb01c69266973f8062fb7bbea4fa4f0be5e3",
+    "docs/security/homologation-2026-10-27.json": "1550b248078b5e299d9220ebbf385b8b84fb5aaa2a02b719782e8da3ae2478d8",
+    "release.json": "eb0f2f4590320f69bcabd1a9694022c203a7e0da340b6c8569599b081da7e736",
+    "docs/release/status.json": "12486a06aac9a3afe61fe2c32e25b552d819f27b9c016cbd4a52c3bf79cac815",
+    "scripts/package_release.py": "bbd947224cb1dda8280978e3cc869966ea565fa829803454d5e7806bbe8e55af"
+  },
+  "external_receipt": "releases/chronos-1.0-homologacao-2026-10-27.zip.receipt.json",
+  "post_package_checks": "Recorded externally after archive creation to avoid hash circularity.",
+  "release_ready": false,
+  "published": false
+}

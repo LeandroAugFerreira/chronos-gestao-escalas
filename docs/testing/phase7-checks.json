@@ -1,0 +1,210 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 7,
+  "date": "2026-10-25",
+  "backend": {
+    "distinct_passed": 191,
+    "pending_errors": 0,
+    "pending_failures": 0,
+    "skipped": 0,
+    "profiles": [
+      "sqlite-file",
+      "postgresql-17.11-real"
+    ],
+    "junit_union_verified": true,
+    "executions": {
+      "phase7-backend.xml": {
+        "tests": 185,
+        "passed": 112,
+        "error": 73,
+        "seconds": 278.214
+      },
+      "phase7-postgres.xml": {
+        "tests": 75,
+        "passed": 74,
+        "error": 1,
+        "seconds": 247.154
+      },
+      "phase7-final.xml": {
+        "tests": 34,
+        "passed": 34,
+        "seconds": 91.649
+      },
+      "phase7-timezone.xml": {
+        "tests": 4,
+        "passed": 4,
+        "seconds": 15.151
+      }
+    },
+    "migration_fk_names_corrected": true,
+    "isolated_pg_setup_error_rechecked": true
+  },
+  "frontend": {
+    "tests": 53,
+    "passed": 53,
+    "seconds": 17.641,
+    "files": 7,
+    "environment": "vitest-testing-library-jsdom",
+    "junit_verified": true
+  },
+  "build": {
+    "typescript": "passed",
+    "vite": "passed",
+    "modules": 2344,
+    "seconds": 21.05,
+    "asset_bytes": {
+      "automation-DvMHUPf_.js": 15804,
+      "BarChart-CzKFVfBi.js": 365169,
+      "index-BGpBsUbP.css": 26862,
+      "index-DabYO7zs.js": 479123,
+      "optimization-D3LAeA-U.js": 23783,
+      "overview-BgELocFl.js": 6632,
+      "scheduling-Dz3_B8BT.js": 23535,
+      "simulation-BWemWBfi.js": 491,
+      "simulation-E1LQfGta.js": 35905
+    }
+  },
+  "n8n_real_http": {
+    "product": "Chronos 1.0",
+    "phase": 7,
+    "n8n_version": "2.44.6",
+    "node_version": "v24.22.1",
+    "real_http": true,
+    "workflows_imported": 4,
+    "workflow_codes_executed": [
+      "A02",
+      "A03",
+      "A04",
+      "A06"
+    ],
+    "workflow_execution_ids": [
+      "1",
+      "11",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "callback_receipts": 9,
+    "artifacts": 1,
+    "internal_notices": 4,
+    "reoptimization_suggestions": 2,
+    "automatic_optimization_jobs": 0,
+    "optimizer_runs_requested": 2,
+    "main_database_modified": false,
+    "credentials_in_source": false,
+    "unauthenticated_webhook_rejected": true,
+    "availability_replay_deduplicated": true,
+    "approved_automatically": false,
+    "external_publication": false,
+    "browser_used": false
+  },
+  "workflow_exports": [
+    {
+      "file": "A02-alerta-cobertura.json",
+      "id": "c9ce137b-2376-5d51-abbb-8f3725650589",
+      "version_id": "b794779b-f64d-53bb-bd7e-b23162296121",
+      "active": false,
+      "sha256": "26ff54953fdb5f1ad02470b7165c99a295d71a34957ddad2576a9844e8d1b649"
+    },
+    {
+      "file": "A03-escala-pendente.json",
+      "id": "43ae7711-6b76-596f-8a9c-0dd67b5bc109",
+      "version_id": "819e813c-a48e-5b91-9007-56adf41471b6",
+      "active": false,
+      "sha256": "4cd1f018b3ec7ef5f9aec22baf6d0ba7dd5e03fa469efa2295db288bbc07cd16"
+    },
+    {
+      "file": "A04-relatorio-programado.json",
+      "id": "4d923f17-6b0e-5bf4-bf6f-a038ff5b9d7a",
+      "version_id": "ee70be03-3d76-5d5d-b4e8-96aba0702b9d",
+      "active": false,
+      "sha256": "fa926c5701de66b24bcdd79f90f7da33125d44ac161be3b7636b9c7c7cf5faaf"
+    },
+    {
+      "file": "A06-disponibilidade.json",
+      "id": "0e225043-1af4-5da1-a786-821e34ed9342",
+      "version_id": "4ee384d0-6e7f-5d46-a6f8-4684f7b9a962",
+      "active": false,
+      "sha256": "fc4ad9e2444360f0e0a6cc919c4b714d866873acffaa9561072685c67319d3ca"
+    }
+  ],
+  "runtime": {
+    "product": "Chronos 1.0",
+    "node_version": "v24.22.1",
+    "node_zip_sha256": "d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95fa5",
+    "n8n_version": "2.44.6",
+    "platform": "win-x64"
+  },
+  "node_archive_hash_verified": true,
+  "global_installation": false,
+  "main_database": {
+    "product": "Chronos 1.0",
+    "before": "008_optimization",
+    "schema": "009_automations",
+    "backup": "chronos-before-phase7-009.sqlite3",
+    "backup_integrity": "ok",
+    "main_integrity": "ok",
+    "foreign_key_violations": 0,
+    "tables": 41,
+    "counts": {
+      "employees": 350,
+      "departments": 19,
+      "availability_rules": 20,
+      "labor_rules": 0,
+      "calendar_shifts": 0,
+      "scenario_versions": 0,
+      "financial_runs": 0,
+      "optimization_runs": 0,
+      "schedule_versions": 0,
+      "schedule_decisions": 0,
+      "entity_reviews": 0,
+      "outbox_events": 0,
+      "automation_executions": 0,
+      "automation_notices": 0,
+      "automation_artifacts": 0,
+      "automation_suggestions": 0,
+      "integration_credentials": 0,
+      "integration_receipts": 0,
+      "webhook_deliveries": 0
+    },
+    "definitions": 7,
+    "enabled_definitions": 0,
+    "users_preserved": true,
+    "fixture_reimported": false,
+    "automatic_reviews": false,
+    "n8n_enabled_in_main": false,
+    "published": false
+  },
+  "prompt_sha256_verified": true,
+  "fixture_reproducibility": "passed",
+  "python_pip_check": "passed",
+  "powershell_script_syntax": "passed",
+  "n8n_setup_idempotent_check": "passed",
+  "temporary_plaintext_credentials_removed": true,
+  "ports_after_tests": {
+    "observed_by": "Get-NetTCPConnection",
+    "listener_count": 0,
+    "checked_ports": [
+      8017,
+      5187,
+      5547,
+      5687
+    ],
+    "closed": true
+  },
+  "browser_visual_qa": "pending-policy-block-preexisting",
+  "published": false,
+  "release_ready": false,
+  "next_phase": 8,
+  "n8n_teardown_verification": {
+    "availability_rows_before": 20,
+    "availability_rows_after": 21,
+    "availability_receipts": 1,
+    "active_test_credentials": 0,
+    "read_only_database_verified": true
+  }
+}

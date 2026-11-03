@@ -1,0 +1,20 @@
+{
+  "product": "Chronos 1.0",
+  "reference_date": "2026-10-27",
+  "candidate_version": "2.45.4",
+  "candidate_installed": false,
+  "candidate_started": false,
+  "scripts_executed": false,
+  "resolution_node": "v24.22.1",
+  "candidate_lock_sha256": "0949d7300776e541e224048411d4eb1557902612f949374b4e895c9358520ef2",
+  "audit_sha256": "9e87a69df90f52c8714b168eaa6e4215082999a046725ac33f957507b78a585d",
+  "counts": {
+    "low": 3,
+    "moderate": 75,
+    "high": 81,
+    "critical": 8,
+    "total": 167
+  },
+  "execution_allowed": false,
+  "scope": "npm audit sobre árvore resolvida; inclui avisos transitivos/propagados e não equivale a CVEs distintas ou exploração comprovada."
+}

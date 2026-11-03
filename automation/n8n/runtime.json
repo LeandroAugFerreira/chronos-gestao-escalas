@@ -1,0 +1,7 @@
+{
+  "product": "Chronos 1.0",
+  "node_version": "v24.22.1",
+  "node_zip_sha256": "d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95fa5",
+  "n8n_version": "2.44.6",
+  "platform": "win-x64"
+}

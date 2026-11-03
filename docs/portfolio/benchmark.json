@@ -1,0 +1,101 @@
+{
+  "product": "Chronos 1.0",
+  "schema": "portfolio-microbenchmark-1.0",
+  "simulated": true,
+  "fixture_sha256": "1206255a481e8ed9de9539857421f5e91e35cac1456c902232a9dc7173983bb8",
+  "python": "3.13.0",
+  "os": "Windows",
+  "architecture": "AMD64",
+  "scope": "Microensaio de uma atividade durante um dia, com 3 e 2 profissionais fictícios. Não é benchmark dos 350 colaboradores.",
+  "methodology": "Mesmos insumos e verificador; first-fit representa uma política manual simulada implementada em código. Repetições sequenciais, sem medir cliques ou tempo de pessoas.",
+  "human_productivity_gain": null,
+  "human_work_time_seconds": null,
+  "observed_financial_savings_cents": null,
+  "limits": [
+    "Tempos são de execução de algoritmos nesta máquina, não produtividade humana.",
+    "Custos imputados por plantão são fictícios e não são salários, pisos ou gastos observados.",
+    "Cobertura numérica e status de teste não certificam validade jurídica ou dimensionamento hospitalar.",
+    "Comparar custo de cobertura incompleta com completa não demonstra economia.",
+    "O caso é pequeno e favorável às duas políticas; não permite extrapolação de desempenho ou ganhos para o hospital."
+  ],
+  "cases": [
+    {
+      "population": 3,
+      "input_sha256": "7b5680fc9cbba4f27b1fdb7167c804d3bb265e84b12a2d22c488d552a8685abe",
+      "algorithm_version": "chronos-cpsat-1.0",
+      "ortools_version": "9.15.6755",
+      "seed": 1042,
+      "workers": 1,
+      "repetitions": 3,
+      "manual_simulated_policy": {
+        "required_staff_minutes": 1440,
+        "covered_staff_minutes": 1440,
+        "uncovered_staff_minutes": 0,
+        "coverage_ratio": 1.0,
+        "constraint_error_categories": 0,
+        "assignments": 3,
+        "hypothetical_cost_cents": 144000,
+        "complete_numerical_schedule": true,
+        "policy": "first-fit cronológico, profissional por ID; rejeita restrições pelo mesmo verificador",
+        "candidate_trials_last_run": 6,
+        "algorithm_seconds_median": 0.003472,
+        "algorithm_seconds_min": 0.003115,
+        "algorithm_seconds_max": 0.012635
+      },
+      "chronos_solver": {
+        "required_staff_minutes": 1440,
+        "covered_staff_minutes": 1440,
+        "uncovered_staff_minutes": 0,
+        "coverage_ratio": 1.0,
+        "constraint_error_categories": 0,
+        "assignments": 3,
+        "hypothetical_cost_cents": 144000,
+        "complete_numerical_schedule": true,
+        "status": "OPTIMAL",
+        "pipeline_seconds_median": 0.012453,
+        "pipeline_seconds_min": 0.011713,
+        "pipeline_seconds_max": 0.677987,
+        "solver_wall_seconds_last_run": 0.006054
+      }
+    },
+    {
+      "population": 2,
+      "input_sha256": "5b6110958f5cff079974c2fbca9ff6cea806d5e04fcd12e12f864f117bdcaef3",
+      "algorithm_version": "chronos-cpsat-1.0",
+      "ortools_version": "9.15.6755",
+      "seed": 1042,
+      "workers": 1,
+      "repetitions": 3,
+      "manual_simulated_policy": {
+        "required_staff_minutes": 1440,
+        "covered_staff_minutes": 960,
+        "uncovered_staff_minutes": 480,
+        "coverage_ratio": 0.6666666666666666,
+        "constraint_error_categories": 0,
+        "assignments": 2,
+        "hypothetical_cost_cents": 96000,
+        "complete_numerical_schedule": false,
+        "policy": "first-fit cronológico, profissional por ID; rejeita restrições pelo mesmo verificador",
+        "candidate_trials_last_run": 5,
+        "algorithm_seconds_median": 0.002242,
+        "algorithm_seconds_min": 0.002123,
+        "algorithm_seconds_max": 0.002373
+      },
+      "chronos_solver": {
+        "required_staff_minutes": 1440,
+        "covered_staff_minutes": 960,
+        "uncovered_staff_minutes": 480,
+        "coverage_ratio": 0.6666666666666666,
+        "constraint_error_categories": 0,
+        "assignments": 2,
+        "hypothetical_cost_cents": 96000,
+        "complete_numerical_schedule": false,
+        "status": "OPTIMAL",
+        "pipeline_seconds_median": 0.00714,
+        "pipeline_seconds_min": 0.007098,
+        "pipeline_seconds_max": 0.008705,
+        "solver_wall_seconds_last_run": 0.003668
+      }
+    }
+  ]
+}

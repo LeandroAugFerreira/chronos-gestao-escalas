@@ -1,0 +1,51 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 3,
+  "date": "2026-10-24",
+  "backend": {
+    "passed": 68,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 1,
+    "seconds": 95.58,
+    "profiles": [
+      "sqlite-file",
+      "postgresql-17.11-real"
+    ]
+  },
+  "frontend": {
+    "passed": 21,
+    "failed": 0,
+    "files": 3,
+    "seconds": 16.89,
+    "environment": "vitest-testing-library-jsdom"
+  },
+  "build": {
+    "typescript": "passed",
+    "vite": "passed",
+    "modules": 2334,
+    "seconds": 13.39,
+    "entry_kb": 464.64,
+    "dashboard_chunk_kb": 371.6
+  },
+  "migration": "005_catalog_revisions",
+  "tables": 23,
+  "http_integration": {
+    "login": 200,
+    "employee_create": 201,
+    "before": 350,
+    "after": 351,
+    "refresh": 200,
+    "logout": 204,
+    "after_logout": 401,
+    "uses_separate_test_database": true
+  },
+  "main_local_preview": {
+    "http": 200,
+    "ready": true,
+    "phase": 3
+  },
+  "browser_visual_qa": "not-executed-previous-policy-block",
+  "production_ready": false,
+  "published": false
+}

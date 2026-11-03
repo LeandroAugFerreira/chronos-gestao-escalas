@@ -1,0 +1,29 @@
+{
+  "acceptance": {
+    "product": "Chronos 1.0",
+    "frozen": true,
+    "frontend_spa": true,
+    "csrf_login_logout": true,
+    "demo_read_only": true,
+    "administrator_created": true,
+    "optimization_queue": "succeeded",
+    "ortools_probe": "OPTIMAL",
+    "seed_idempotent": true,
+    "database_integrity": "ok",
+    "tk_initialized": true,
+    "n8n": false,
+    "scheduler": false
+  },
+  "distribution_scan": {
+    "product": "Chronos 1.0",
+    "executable_bytes": 68922418,
+    "sha256": "077503582d30e395ceb53404f61e840d20df7e7bdb0876c9f4433b962a5b2a47",
+    "archive_entries": 1845,
+    "payloads_scanned": 4053,
+    "private_secret_matches": 0,
+    "forbidden_data_files": 0,
+    "frozen_modules_scanned": true
+  },
+  "minimal_path_test": true,
+  "shutdown_verified": true
+}

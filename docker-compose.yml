@@ -1,0 +1,19 @@
+name: chronos
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: chronos
+      POSTGRES_PASSWORD: ${CHRONOS_POSTGRES_PASSWORD:?Defina uma senha local no ambiente}
+      POSTGRES_DB: chronos
+    ports:
+      - "127.0.0.1:5547:5432"
+    volumes:
+      - chronos_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chronos -d chronos"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  chronos_pgdata:

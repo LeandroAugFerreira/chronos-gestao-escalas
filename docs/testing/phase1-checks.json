@@ -1,0 +1,16 @@
+{
+  "product": "Chronos 1.0",
+  "date": "2026-10-24",
+  "phase": 1,
+  "backend_tests": { "passed": 12, "failed": 0, "warnings": 1, "seconds": 1.34, "warning": "Starlette TestClient/httpx deprecation" },
+  "frontend_build": { "typescript": "passed", "vite": "passed", "modules": 86 },
+  "fixture": { "reproducible": true, "employees": 350, "departments": 19, "job_roles": 38 },
+  "http": { "health": 200, "frontend": 200, "api_via_frontend_proxy": 200 },
+  "prompt_hash_and_identity": "passed",
+  "original_attachment_unchanged": true,
+  "powershell_syntax": "passed",
+  "browser_visual_qa": "not_executed_policy_block",
+  "postgresql_validation": "not_executed_phase_2",
+  "legal_engine_and_solver": "specified_not_implemented",
+  "published": false
+}

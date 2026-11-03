@@ -1,0 +1,157 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 6,
+  "date": "2026-10-24",
+  "backend": {
+    "distinct_passed": 156,
+    "pending_errors": 0,
+    "pending_failures": 0,
+    "skipped": 0,
+    "profiles": [
+      "sqlite-file",
+      "postgresql-17.11-real"
+    ],
+    "executions": {
+      "phase6-tests.xml": {
+        "tests": 143,
+        "passed": 141,
+        "error": 2,
+        "seconds": 660.72
+      },
+      "phase6-final-tests.xml": {
+        "tests": 40,
+        "passed": 40,
+        "seconds": 162.263
+      },
+      "phase6-worker-final.xml": {
+        "tests": 4,
+        "passed": 4,
+        "seconds": 41.139
+      },
+      "phase6-concurrency.xml": {
+        "tests": 2,
+        "passed": 2,
+        "seconds": 20.391
+      }
+    },
+    "junit_union_verified": true,
+    "initial_environment_errors_rechecked": true,
+    "concurrent_transactions_verified": true
+  },
+  "frontend": {
+    "tests": 45,
+    "passed": 45,
+    "failed": 0,
+    "files": 6,
+    "seconds": 146.63,
+    "environment": "vitest-testing-library-jsdom",
+    "evidence": "successful Vitest console output, session 72200",
+    "junit_verified": false
+  },
+  "build": {
+    "typescript": "passed",
+    "vite": "passed",
+    "modules": 2342,
+    "asset_bytes": {
+      "BarChart-DUXNO5uo.js": 365169,
+      "index-BGpBsUbP.css": 26862,
+      "index-CcF0lw24.js": 477950,
+      "optimization-6FBSUrdc.js": 23306,
+      "overview-iBcQIB66.js": 6583,
+      "scheduling-9H7mVIh6.js": 23535,
+      "simulation-BmJQmzHC.js": 35905,
+      "simulation-BWemWBfi.js": 491
+    }
+  },
+  "http_integration": {
+    "product": "Chronos 1.0",
+    "phase": 6,
+    "transport": "real-http-vite-proxy-fastapi",
+    "browser_used": false,
+    "login": 200,
+    "create_employee": 201,
+    "dashboard_before": 350,
+    "dashboard_after": 351,
+    "cookie_http_only": true,
+    "refresh": 200,
+    "logout": 204,
+    "access_after_logout": 401,
+    "main_database_modified": false,
+    "calendar_preview": 200,
+    "stale_preview": 409,
+    "rule_version": 201,
+    "draft_save": 201,
+    "month_listing": 1,
+    "cancel": 200,
+    "evaluation_snapshots": 2,
+    "scenario_create": 201,
+    "scenario_population": 351,
+    "scenario_seconds": 2.975,
+    "financial_preview": 200,
+    "financial_save": 201,
+    "one_time_increment_cents": 10000,
+    "sensitivity_delta_cents": 1000,
+    "financial_comparison": 200,
+    "optimization_enqueue": 202,
+    "worker_cli": "passed",
+    "worker_seconds": 17.398,
+    "solver_status": "OPTIMAL",
+    "solver_population": 351,
+    "coverage_staff_minutes": 420,
+    "uncovered_staff_minutes": 0,
+    "schedule_proposal": "draft",
+    "pending_approval_blocked": 409,
+    "optimization_spa_route": 200
+  },
+  "main_database": {
+    "product": "Chronos 1.0",
+    "before": "007_scenarios_finance",
+    "schema": "008_optimization",
+    "backup": "chronos-before-phase6-008.sqlite3",
+    "backup_integrity": "ok",
+    "main_integrity": "ok",
+    "foreign_key_violations": 0,
+    "tables": 32,
+    "counts": {
+      "employees": 350,
+      "departments": 19,
+      "availability_rules": 20,
+      "labor_rules": 0,
+      "calendar_shifts": 0,
+      "scenario_versions": 0,
+      "financial_runs": 0,
+      "optimization_runs": 0,
+      "schedule_versions": 0,
+      "schedule_decisions": 0,
+      "entity_reviews": 0
+    },
+    "fixture_reimported": false,
+    "automatic_reviews": false,
+    "published": false
+  },
+  "dependencies": {
+    "python": "3.13.0",
+    "ortools": "9.15.6755",
+    "pip_check": "passed"
+  },
+  "prompt_sha256_verified": true,
+  "fixture": {
+    "employees": 350,
+    "departments": 19,
+    "reproducibility": "passed"
+  },
+  "ports_after_tests": {
+    "observed_by": "Get-NetTCPConnection",
+    "listener_count": 0,
+    "closed": true,
+    "checked_ports": [
+      8017,
+      5187,
+      5547
+    ]
+  },
+  "browser_visual_qa": "pending-policy-block-preexisting",
+  "published": false,
+  "release_ready": false,
+  "next_phase": 7
+}

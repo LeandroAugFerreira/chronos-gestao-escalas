@@ -1,0 +1,64 @@
+{
+  "product": "Chronos 1.0",
+  "reference_date": "2026-10-27",
+  "scope": "local_run_user_manual_and_email_login",
+  "frontend": {
+    "tests": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "a3d485a4fee7636734374d3bbca1fd5dd55eec684e72708aa8423c95c596fd65"
+  },
+  "backend": {
+    "tests": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "d507d1c1dff4867f7e05f6e8b86f9f6873e4f3cf7373e1fabd27067627d13160"
+  },
+  "backend_profiles": [
+    "sqlite",
+    "postgresql"
+  ],
+  "frontend_build": {
+    "passed": true,
+    "modules": 2348,
+    "seconds": 18.55
+  },
+  "http_verification": {
+    "product": "Chronos 1.0",
+    "frontend_url": "http://127.0.0.1:5187",
+    "frontend_http": 200,
+    "api_ready_http": 200,
+    "schema": "010_pattern_revision",
+    "web_session_login_verified": true,
+    "email_identifier_verified": true,
+    "administrator_global_role_verified": true,
+    "csrf_verified": true,
+    "api_proxy_verified": true,
+    "employees": 350,
+    "departments": 19,
+    "unauthorized_rejected": true,
+    "test_session_logged_out": true,
+    "browser_visual_qa": false,
+    "n8n_started": false,
+    "scheduler_started": false,
+    "published": false
+  },
+  "manual": {
+    "path": "output/pdf/Chronos-1.0-Manual-de-Uso.pdf",
+    "pages": 9,
+    "sha256": "e53b57eb38af43d8dff532c4a9c8b3ecd7060df936039d47bbd885acfafde6f7",
+    "rendered_with": "Poppler",
+    "visual_review": "contact sheet and full-size page review",
+    "contains_password": false,
+    "source": "docs/manual-de-uso.md"
+  },
+  "start_stop_restart_verified": true,
+  "demo_business_data_reset": false,
+  "admin_credentials_configured_by_owner_request": true,
+  "schema_migration_performed": false,
+  "browser_visual_qa": false,
+  "published": false,
+  "release_ready": false
+}

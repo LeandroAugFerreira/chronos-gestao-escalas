@@ -1,0 +1,98 @@
+{
+  "id": "43ae7711-6b76-596f-8a9c-0dd67b5bc109",
+  "name": "Chronos 1.0 — A03 — Escala pendente",
+  "active": false,
+  "nodes": [
+    {
+      "id": "17d08737-16e5-5c74-9d04-ea0ce2d16a83",
+      "name": "Evento autenticado",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "91557e71-a527-54ea-87ce-b8d3fd2495fb",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "chronos/a03",
+        "authentication": "headerAuth",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "f7aadd88-f4fa-5a19-b688-4378114beb8c",
+          "name": "Chronos 1.0 — Webhook local"
+        }
+      }
+    },
+    {
+      "id": "c1883b87-5d21-5c54-95a1-06bb31b6497d",
+      "name": "Confirmar evento no Chronos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 1000,
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8017/api/v1/integration/automation-events",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Chronos-Workflow-Execution",
+              "value": "={{ $execution.id }}"
+            }
+          ]
+        },
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.body) }}",
+        "options": {
+          "timeout": 5000
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "57f45fe9-e1f1-5bb4-9e89-922db86def28",
+          "name": "Chronos 1.0 — Callback autorizado"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Evento autenticado": {
+      "main": [
+        [
+          {
+            "node": "Confirmar evento no Chronos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Sao_Paulo",
+    "saveDataErrorExecution": "none",
+    "saveDataSuccessExecution": "none",
+    "saveExecutionProgress": false,
+    "saveManualExecutions": false
+  },
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "pinData": {},
+  "tags": [],
+  "versionId": "819e813c-a48e-5b91-9007-56adf41471b6"
+}

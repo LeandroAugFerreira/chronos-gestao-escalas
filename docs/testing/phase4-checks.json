@@ -1,0 +1,77 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 4,
+  "date": "2026-10-24",
+  "backend": {
+    "passed": 92,
+    "failed": 0,
+    "skipped": 0,
+    "warnings": 1,
+    "seconds": 182.29,
+    "profiles": [
+      "sqlite-file",
+      "postgresql-17.11-real"
+    ]
+  },
+  "frontend": {
+    "passed": 29,
+    "failed": 0,
+    "files": 4,
+    "seconds": 37.55,
+    "environment": "vitest-testing-library-jsdom"
+  },
+  "build": {
+    "typescript": "passed",
+    "vite": "passed",
+    "modules": 2337,
+    "seconds": 20.65,
+    "entry_kb": 476.73,
+    "calendar_rules_chunk_kb": 23.54,
+    "dashboard_chunk_kb": 371.63,
+    "css_kb": 26.22
+  },
+  "migration": "006_calendar_rules",
+  "tables": 26,
+  "http_integration": {
+    "product": "Chronos 1.0",
+    "phase": 4,
+    "transport": "real-http-vite-proxy-fastapi",
+    "browser_used": false,
+    "login": 200,
+    "create_employee": 201,
+    "dashboard_before": 350,
+    "dashboard_after": 351,
+    "cookie_http_only": true,
+    "refresh": 200,
+    "logout": 204,
+    "access_after_logout": 401,
+    "main_database_modified": false,
+    "calendar_preview": 200,
+    "stale_preview": 409,
+    "rule_version": 201,
+    "draft_save": 201,
+    "month_listing": 1,
+    "cancel": 200,
+    "evaluation_snapshots": 2
+  },
+  "main_database": {
+    "schema": "006_calendar_rules",
+    "employees": 350,
+    "departments": 19,
+    "calendar_shifts": 0,
+    "labor_rules": 0,
+    "fixture_restored": false,
+    "backup": "after-migration-only",
+    "pre_migration_backup_failed": true
+  },
+  "readiness": {
+    "status": 200,
+    "phase": 4,
+    "method": "TestClient-main-local-database"
+  },
+  "prompt_and_fixture_integrity": "passed",
+  "browser_visual_qa": "not-executed-previous-policy-block",
+  "production_ready": false,
+  "published": false,
+  "next_phase": 5
+}

@@ -1,0 +1,16 @@
+{
+  "product": "Chronos",
+  "official_name": "Chronos — Gestão Inteligente de Jornadas e Escalas",
+  "display_name": "Chronos 1.0",
+  "version": "1.0",
+  "phase": 10,
+  "status": "review-checkpoint",
+  "release_ready": false,
+  "published": false,
+  "date": "2026-11-01",
+  "acceptance": "pending_security_and_visual_gates",
+  "package_kind": "local-review-package",
+  "homologation_round": "2026-11-01-windows-portfolio",
+  "current_report": "docs/testing/windows-portfolio-2026-11-01-report.md",
+  "current_package": "releases/chronos-1.0-portfolio-2026-11-01-r2.zip"
+}

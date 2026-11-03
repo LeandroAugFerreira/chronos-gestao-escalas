@@ -1,0 +1,90 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 10,
+  "reference_date": "2026-10-27",
+  "scope": "basic_people_csv_export",
+  "frontend": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "files": 10,
+    "evidence_origin": "Completed exec session 32365 stdout, exit 0; no runner XML produced. Transcript recorded from tool output.",
+    "transcript_sha256": "403079f4e75b6f8df725dc3fea3a8cb2d1d4c2db1f2cbf9bda1a3f87d1a7eb5a"
+  },
+  "frontend_new_tests": 6,
+  "backend": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "3d0f0aeccf61809611376db66f02eb9fa5785d8213e14d9882846ad6351d27e5"
+  },
+  "backend_modules": [
+    "test_people_export",
+    "test_phase2",
+    "test_phase8"
+  ],
+  "backend_profiles": [
+    "sqlite",
+    "postgresql"
+  ],
+  "backend_new_cases": 4,
+  "backend_new_executions": 8,
+  "full_backend_regression_rerun": false,
+  "frontend_build": {
+    "passed": true,
+    "typescript_passed": true,
+    "modules": 2348,
+    "seconds": 33.31
+  },
+  "phase1_identity_validator_passed": true,
+  "dependencies_changed": false,
+  "main_database_unchanged": true,
+  "main_database_sha256": "0fece3428fe99b20beb1ec7a6292d8d4a58b49e67ed4c86cadec3d2158d7fd04",
+  "migration_performed": false,
+  "csv_limits": {
+    "rows": 20000,
+    "bytes": 8388608,
+    "no_silent_truncation": true
+  },
+  "authorized_directory_fields_only": true,
+  "browser_visual_qa": false,
+  "screenshots_captured": 0,
+  "native_excel_csv_verified": false,
+  "power_bi_desktop_verified": false,
+  "n8n_new_audit_performed": false,
+  "n8n_execution_allowed": false,
+  "previous_n8n_audit_reference": "../security/homologation-2026-10-27.json",
+  "package_tests_reference": "homologation-2026-10-27-checks.json; packager unchanged, prior 18 tests not rerun in this round",
+  "source_sha256": {
+    "backend/app/api/resources.py": "79989451faf69bf88fec92eed4c524e3584a087b76212c4dbc0372c67fb709c4",
+    "backend/app/repositories/people.py": "be80d87c394dc769c0e4fac087ea89b5ef0233e242f5d7d48e09956dda902519",
+    "backend/app/schemas/people_export.py": "806f00f79b8c01183ec06cb3587feab558153ffc3b4cb797d08e85d00889aff7",
+    "backend/app/services/people_exports.py": "15409896fd4793d5738e8ab079959ee73cc2d7521bdb1417ab43ac99e59e93b3",
+    "backend/app/services/csv_export.py": "ebf1f5f035d9f8b55c30306fdc96c10031ba5488e4f8d5f8765fa39cfb36a42f",
+    "backend/app/services/report_exports.py": "10d70c1e3feff48383cc8fc53b8f8d5ae457888c851ca3923680fd48c17dad12",
+    "backend/tests/test_people_export.py": "4053abf5755566d50a23883c97fa47face09d7caf977c180b3edb9fdb5451aee",
+    "frontend/src/components/people-export.tsx": "1f7ac78ba4e4f9d6bf157ab6cf7cf778d14870d48bb2e9f7992900da209b648d",
+    "frontend/src/services/download.ts": "c27188a2ad6dc4440df43e0c2ae08e3300f918ef409c46b4d3ec253c2a540b11",
+    "frontend/src/pages/employees.tsx": "7354dbd4f52fa2397bf622c41d204448b56120b1093b5771d53ea047a4808e54",
+    "frontend/src/pages/analytics.tsx": "4dfac14aed5a69554000b06a8cf44688d17c13a492e6fbaa7a5f5afcc036b99c",
+    "frontend/src/tests/people-export.test.tsx": "3d38b8ff1bc58c6ea4e06389332d1d61ce84ac8968dabcde2da2bd02d49e6809",
+    "docs/api/api.md": "abdd53ae5f4fca819f1dc310cfc9608396ccda522817992b4f136dc8a6014c44",
+    "docs/user-guide.md": "efc1e35b67c43b1d4d77d157126a98339956987fc05ac374e27d911797a7e09f",
+    "docs/portfolio/coverage.md": "1de1062701615d625d469601b401b9cb5c75f776a69ba41a57c11a22bbd1c0d2",
+    "docs/roadmap.md": "0597e181008e512276f5495f0637e412d88f11c1ce4cd2de4aa13e17604ffacf",
+    "docs/release/README.md": "81a61257a09663cd2fc1c7b89ea893ff54edfcb9cf86ff8aaed8b11487f00b1e",
+    "README.md": "24a86d439d0da8b66f91e3318bd2ec70d22cf7dff2ee74c633b3a50a68b5b9e6",
+    "CHANGELOG.md": "fdd9b75afbb27b8ac1155cabc4a1d5baa4252ed7b240e3073bd0b141e4e4e263",
+    "release.json": "fcb9ca496a0e7aeaacf7938c3a85e12003ee28bd1f7aa4aac980832778ed539f",
+    "docs/release/status.json": "b184227d07d1d285b327c364f0d33940c94fde95eb9d4587c24fbd7660a38dd6",
+    "scripts/package_release.py": "bbd947224cb1dda8280978e3cc869966ea565fa829803454d5e7806bbe8e55af",
+    "automation/n8n/security-status.json": "d34e04224013fb4a7a4b7a5b2481fb01c69266973f8062fb7bbea4fa4f0be5e3",
+    "docs/testing/people-export-2026-10-27-report.md": "98ec6fba489b5ac043cf8e20169f40095813592e01c8ad6a56f6b95317070a18"
+  },
+  "external_receipt": "releases/chronos-1.0-exportacao-cadastral-2026-10-27.zip.receipt.json",
+  "post_package_checks": "Recorded externally after archive creation to avoid hash circularity.",
+  "release_ready": false,
+  "published": false
+}

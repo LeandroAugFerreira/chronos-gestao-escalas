@@ -1,0 +1,279 @@
+{
+  "algorithm_version": "chronos-cpsat-1.0",
+  "scenario": {
+    "id": "s",
+    "unit_id": "unit",
+    "department_id": "dept",
+    "digest": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "inputs": {
+      "demands": [
+        {
+          "department_id": "dept",
+          "skill_ids": [],
+          "qualification_ids": [],
+          "weekdays": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start_time": "00:00",
+          "duration_minutes": 1440,
+          "required_staff": 1,
+          "validation_status": "validated"
+        }
+      ],
+      "validation_status": "validated"
+    }
+  },
+  "options": {
+    "scenario_id": "s",
+    "name": "Teste sintético",
+    "start_date": "2026-11-02",
+    "end_date": "2026-11-03",
+    "mode": "strict",
+    "eligibility": "verified",
+    "templates": [
+      {
+        "name": "0",
+        "start_time": "00:00",
+        "duration_minutes": 480,
+        "break_after_minutes": 0,
+        "break_minutes": 0,
+        "break_paid": false,
+        "weekdays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cost_cents": 0
+      },
+      {
+        "name": "8",
+        "start_time": "08:00",
+        "duration_minutes": 480,
+        "break_after_minutes": 0,
+        "break_minutes": 0,
+        "break_paid": false,
+        "weekdays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cost_cents": 0
+      },
+      {
+        "name": "16",
+        "start_time": "16:00",
+        "duration_minutes": 480,
+        "break_after_minutes": 0,
+        "break_minutes": 0,
+        "break_paid": false,
+        "weekdays": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "cost_cents": 0
+      }
+    ],
+    "limits": {
+      "source": "Parâmetros sintéticos, sem caráter normativo",
+      "validation_status": "validated",
+      "review_evidence": "Revisão exclusivamente para este teste sintético",
+      "max_daily_minutes": 480,
+      "max_weekly_minutes": 2400,
+      "min_rest_minutes": 600,
+      "min_break_minutes": 0,
+      "break_threshold_minutes": 480,
+      "min_weekly_rest_minutes": 1440,
+      "max_consecutive_days": 5
+    },
+    "coverage_windows": [],
+    "allow_cross_department": false,
+    "activity_job_role_ids": {
+      "0": [
+        "role"
+      ]
+    },
+    "cycle_anchors": {
+      "pattern": "2026-11-02"
+    },
+    "history_review_evidence": "Histórico sintético completo conferido para teste",
+    "cross_unit_travel_minutes": 0,
+    "continuity_max_people_per_activity_day": null,
+    "parent_schedule_id": null,
+    "seconds": 20,
+    "seed": 1042,
+    "workers": 1,
+    "balance_weight": 1,
+    "preference_weight": 1,
+    "cost_weight": 0,
+    "cost_source": ""
+  },
+  "facts": {
+    "units": [
+      {
+        "id": "unit",
+        "timezone": "America/Sao_Paulo"
+      }
+    ],
+    "employees": [
+      {
+        "id": "p0",
+        "status": "active",
+        "unit_id": "unit",
+        "department_id": "dept",
+        "job_role_id": "role",
+        "preferences": {}
+      },
+      {
+        "id": "p1",
+        "status": "active",
+        "unit_id": "unit",
+        "department_id": "dept",
+        "job_role_id": "role",
+        "preferences": {}
+      },
+      {
+        "id": "p2",
+        "status": "active",
+        "unit_id": "unit",
+        "department_id": "dept",
+        "job_role_id": "role",
+        "preferences": {}
+      }
+    ],
+    "contracts": [
+      {
+        "id": "c0",
+        "employee_id": "p0",
+        "work_pattern_id": "pattern",
+        "valid_from": "2020-01-01",
+        "valid_until": null,
+        "weekly_minutes": 2400,
+        "validation_status": "validated"
+      },
+      {
+        "id": "c1",
+        "employee_id": "p1",
+        "work_pattern_id": "pattern",
+        "valid_from": "2020-01-01",
+        "valid_until": null,
+        "weekly_minutes": 2400,
+        "validation_status": "validated"
+      },
+      {
+        "id": "c2",
+        "employee_id": "p2",
+        "work_pattern_id": "pattern",
+        "valid_from": "2020-01-01",
+        "valid_until": null,
+        "weekly_minutes": 2400,
+        "validation_status": "validated"
+      }
+    ],
+    "work_patterns": [
+      {
+        "id": "pattern",
+        "configuration": {
+          "cycle": [
+            "work"
+          ],
+          "shift_minutes": 480
+        },
+        "legal_status": "validated"
+      }
+    ],
+    "employee_skills": [],
+    "employee_qualifications": [],
+    "role_skills": [],
+    "role_qualifications": [],
+    "availability_rules": [],
+    "calendar_shifts": [],
+    "approved_schedules": [],
+    "scenario_reviews": [],
+    "labor_rules": [
+      {
+        "id": "max_daily",
+        "kind": "max_daily",
+        "supersedes_id": null,
+        "contract_id": null,
+        "unit_id": null,
+        "job_role_id": null,
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_until": "2027-01-01T00:00:00+00:00",
+        "minutes": 480,
+        "threshold_minutes": 480,
+        "status": "validated"
+      },
+      {
+        "id": "max_weekly",
+        "kind": "max_weekly",
+        "supersedes_id": null,
+        "contract_id": null,
+        "unit_id": null,
+        "job_role_id": null,
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_until": "2027-01-01T00:00:00+00:00",
+        "minutes": 2400,
+        "threshold_minutes": 480,
+        "status": "validated"
+      },
+      {
+        "id": "min_rest",
+        "kind": "min_rest",
+        "supersedes_id": null,
+        "contract_id": null,
+        "unit_id": null,
+        "job_role_id": null,
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_until": "2027-01-01T00:00:00+00:00",
+        "minutes": 600,
+        "threshold_minutes": 480,
+        "status": "validated"
+      },
+      {
+        "id": "min_break",
+        "kind": "min_break",
+        "supersedes_id": null,
+        "contract_id": null,
+        "unit_id": null,
+        "job_role_id": null,
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_until": "2027-01-01T00:00:00+00:00",
+        "minutes": 0,
+        "threshold_minutes": 480,
+        "status": "validated"
+      },
+      {
+        "id": "min_weekly_rest",
+        "kind": "min_weekly_rest",
+        "supersedes_id": null,
+        "contract_id": null,
+        "unit_id": null,
+        "job_role_id": null,
+        "valid_from": "2026-01-01T00:00:00+00:00",
+        "valid_until": "2027-01-01T00:00:00+00:00",
+        "minutes": 1440,
+        "threshold_minutes": 480,
+        "status": "validated"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 8,
+  "date": "2026-10-25",
+  "results": {
+    "phase8-backend.xml": {
+      "tests": 214,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "1ad06fa26c0fd5feb779967fb99f358d6d44a8fc066ab1a73f4a29a5cab26aa1"
+    },
+    "phase8-backend-target.xml": {
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "3bdc18b85ca46a252951b0793758414d82c9ae7cc7c13c92f262f1b39eba484a"
+    },
+    "phase8-frontend.xml": {
+      "tests": 62,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "cf629d84b2f2ff6065ee035ba1da6cb3914da7aa6238e0ff3c2250b114591ed2"
+    },
+    "phase8-frontend-target.xml": {
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "a48f1c567d578348f21665158bdb3fbeef7cf4a2d9799549f4d22f3a148300c2"
+    }
+  },
+  "backend_unique_passed": 218,
+  "frontend_unique_passed": 62,
+  "backend_by_kind": {
+    "sqlite": 85,
+    "postgresql": 85,
+    "pure": 48
+  },
+  "build": {
+    "passed": true,
+    "modules": 2345,
+    "seconds": 15.03,
+    "analytics_chunk_kb": 8.14,
+    "warnings": "Rollup removed misplaced PURE annotations in dependency comments."
+  },
+  "workbook_qa": {
+    "tool": "@oai/artifact-tool",
+    "reopened": true,
+    "recalculated": true,
+    "summary_matches": true,
+    "input_change_recalculated": true,
+    "source_restored": true,
+    "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}",
+    "rendered_sheets": [
+      "Resumo",
+      "units",
+      "scenario",
+      "coverage",
+      "proposals",
+      "assignments",
+      "finance",
+      "executions"
+    ],
+    "native_excel_verified": false,
+    "power_bi_desktop_verified": false,
+    "visual_review_passed": true,
+    "error_scan_zero_matches": true
+  },
+  "main_database": {
+    "mode": "read_only",
+    "schema_head": "009_automations",
+    "domain_tables": 41,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "counts": {
+      "employees": 350,
+      "departments": 19,
+      "availability_rules": 20,
+      "scenario_versions": 0,
+      "financial_runs": 0,
+      "optimization_runs": 0,
+      "schedule_versions": 0,
+      "automation_definitions": 7,
+      "automation_executions": 0,
+      "integration_credentials": 0
+    },
+    "enabled_automations": 0,
+    "file_unchanged_during_check": true
+  },
+  "pip_check": true,
+  "fixture_check": true,
+  "identity_check": true,
+  "runtime_install": "XlsxWriter 3.2.9, isolated venv only",
+  "source_sha256": {
+    "backend/app/api/analytics.py": "e323b93083e835aa5c13dc113f6d4e72ec1aba8af3daecd3a0fc879aabfbc959",
+    "backend/app/schemas/analytics.py": "59bc64f40aed7e986f274ef2c0564e5b88318326d0bc829ac385db2bb2d35579",
+    "backend/app/services/analytics.py": "ab7a45766fd02d22e83b6f76b73e3a4ab892bc761ee3e51cd9aefbb6f5df1d66",
+    "backend/app/services/report_exports.py": "76c0aadcaca2e395970fc7dd5453247d279afdf70e4f933780e0e4284c590c1e",
+    "backend/tests/test_phase8.py": "7d4c0e83406f2ef808e12b64788c8cf4df3733bdb6b766ed86a747cef5314df2",
+    "frontend/src/pages/analytics.tsx": "871143069ec3ae4bedcef7642fad6e852f07c9df8eb72476473f1bc640587877",
+    "frontend/src/tests/analytics.test.tsx": "4adb522444e36a47b3cf485fc6a7379196b012f353b540f1562cd5b92dec49f8",
+    "frontend/src/App.tsx": "153bbda78c5862a0dde5d78dd26685502568007ffd7f5dcb39754168bd16f87c",
+    "backend/requirements-lock.txt": "7dfea1c41c96293f89c0cc9b1cd96dad77a1fffce4cfefbca8983b4f10d03c3e",
+    "docs/architecture/phase8.md": "82a3da8340a3119c492c107e4c4e413583318643b6c8da2d858a3df2dbfcab67",
+    "docs/integrations/power-bi.md": "07360729ef485b6ecb7f5ce29d1c3ccd3446688216935888d0d2eacb528bd665",
+    "release.json": "494d0ab90d31848268b7033b4ccaa18dc508c169cb58e1ff4929df4c3fcdf334"
+  },
+  "browser_visual_qa": false,
+  "external_ai_used": false,
+  "native_excel_verified": false,
+  "power_bi_desktop_verified": false,
+  "published": false,
+  "release_ready": false
+}

@@ -1,0 +1,16 @@
+{
+  "product": "Chronos 1.0",
+  "date": "2026-10-24",
+  "source_sha256": "eb2fb9395cc6d4ab4bc89779dccd3bc4b5556b1431cf9d27e1c9f30b21b8a339",
+  "consolidated_sha256": "c275a8ea87d946616ecf14de076ee331ba80a86a37e4dba433fe809b3c149395",
+  "source_attachment": "Texto colado.txt",
+  "original_sections_preserved": 25,
+  "update_control_section": 26,
+  "changes": [
+    "identidade e versão",
+    "cenário Hospital Horizonte 350 colaboradores/19 setores",
+    "jornadas e cobertura condicionadas",
+    "multissegmento",
+    "divergência de vigência registrada conforme exigência de validação oficial"
+  ]
+}

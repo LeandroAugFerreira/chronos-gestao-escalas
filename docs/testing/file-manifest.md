@@ -1,0 +1,70 @@
+# Chronos 1.0 — Manifesto de arquivos autorais
+
+Arquivos criados exclusivamente no novo projeto Chronos. Dependências, builds, caches e metadados Git não entram nesta lista. Nenhum arquivo anterior de outro projeto foi alterado.
+
+- `.env.example`
+- `.gitignore`
+- `automation/n8n/README.md`
+- `backend/alembic/.gitkeep`
+- `backend/app/__init__.py`
+- `backend/app/analytics/.gitkeep`
+- `backend/app/api/routes.py`
+- `backend/app/automation/.gitkeep`
+- `backend/app/core/config.py`
+- `backend/app/main.py`
+- `backend/app/models/.gitkeep`
+- `backend/app/optimization/.gitkeep`
+- `backend/app/repositories/.gitkeep`
+- `backend/app/rules/.gitkeep`
+- `backend/app/schemas/demo.py`
+- `backend/app/services/demo.py`
+- `backend/app/workers/.gitkeep`
+- `backend/pytest.ini`
+- `backend/requirements-dev.txt`
+- `backend/requirements-lock.txt`
+- `backend/requirements.txt`
+- `backend/scripts/generate_demo.py`
+- `backend/tests/test_checkpoint.py`
+- `CHANGELOG.md`
+- `data/synthetic/hospital_horizonte.json`
+- `data/synthetic/README.md`
+- `data/templates/.gitkeep`
+- `docs/api/api.md`
+- `docs/architecture/architecture.md`
+- `docs/architecture/optimization.md`
+- `docs/business-process/processes.md`
+- `docs/database/model.md`
+- `docs/legal-rules/labor-rules.md`
+- `docs/portfolio-case/.gitkeep`
+- `docs/requirements/consolidation.json`
+- `docs/requirements/PROMPT_MESTRE_CHRONOS_1.0.md`
+- `docs/requirements/requirements.md`
+- `docs/roadmap.md`
+- `docs/testing/acceptance.md`
+- `docs/testing/phase1-checks.json`
+- `docs/testing/phase1-report.md`
+- `frontend/index.html`
+- `frontend/package-lock.json`
+- `frontend/package.json`
+- `frontend/public/.gitkeep`
+- `frontend/src/assets/.gitkeep`
+- `frontend/src/components/.gitkeep`
+- `frontend/src/hooks/.gitkeep`
+- `frontend/src/layouts/.gitkeep`
+- `frontend/src/main.tsx`
+- `frontend/src/pages/.gitkeep`
+- `frontend/src/services/api.ts`
+- `frontend/src/styles/app.css`
+- `frontend/src/types/.gitkeep`
+- `frontend/src/utils/.gitkeep`
+- `frontend/tsconfig.json`
+- `frontend/vite.config.ts`
+- `README.md`
+- `release.json`
+- `scripts/check.ps1`
+- `scripts/setup.ps1`
+- `scripts/start-backend.ps1`
+- `scripts/start-frontend.ps1`
+- `scripts/validate_phase1.py`
+
+- `docs/testing/file-manifest.md` (este manifesto).

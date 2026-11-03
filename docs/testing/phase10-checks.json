@@ -1,0 +1,74 @@
+{
+  "product": "Chronos 1.0",
+  "phase": 10,
+  "reference_date": "2026-10-26",
+  "scope": "documentation_and_local_review_package",
+  "tests": {
+    "phase10_new_tests_passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "xml_sha256": "3b0f139f359dd8add25c1ccdf42a278bceb5961f48782b5ab7863cc22851e757"
+  },
+  "frontend_build": {
+    "passed": true,
+    "modules": 2345,
+    "seconds": 12.85
+  },
+  "historical_phase9_tests": {
+    "backend": 253,
+    "frontend": 62,
+    "rerun_as_full_regression_in_phase10": false
+  },
+  "phase9_recorded_core_unchanged": true,
+  "intentional_change_in_phase9_inventory": [
+    "release.json"
+  ],
+  "official_name_utf8_correct": true,
+  "fixture_check": true,
+  "identity_check": true,
+  "main_database_unchanged": true,
+  "benchmark": {
+    "simulated": true,
+    "repetitions": 3,
+    "populations": [
+      3,
+      2
+    ],
+    "human_productivity_gain": null,
+    "human_work_time_measured": false,
+    "observed_financial_savings": null
+  },
+  "screenshots_captured": 0,
+  "browser_visual_qa": false,
+  "power_bi_desktop_verified": false,
+  "n8n_execution_allowed": false,
+  "post_package_checks": "Consult adjacent .zip.receipt.json; hashes and extraction smoke are verified after the ZIP is created.",
+  "external_receipt": "releases/chronos-1.0-phase10-checkpoint.zip.receipt.json",
+  "source_sha256": {
+    "scripts/package_release.py": "bbd947224cb1dda8280978e3cc869966ea565fa829803454d5e7806bbe8e55af",
+    "backend/scripts/portfolio_benchmark.py": "b171990b79ff8841227a5be6e121004b6f166e3cbeee9dd3be1d9e417811749e",
+    "backend/tests/test_phase10.py": "3a49767cf9789f1a479ad10ff23ebc5827ae145975bc79f3358fe39890c9584f",
+    "data/synthetic/portfolio_benchmark.json": "1d9a7451a07937677f779dee64c4b46a0f558a5151726cd3dc318f1d72a43434",
+    "release.json": "fe0de520a0c9fc72ec3fd5169d519cd3bc14bfc28d0a32d249872390f8ea9277",
+    "docs/user-guide.md": "687f09f0b05ea2571376b826738d8e150dc64199edcd46ab4921b917413ca6ef",
+    "docs/release/README.md": "57c06a45ec498b87ccebad0f0631709ac7eca2290f69f7160e5c00f0fdbcca1b",
+    "docs/release/handover.md": "3d90b09d27fafa199dcfe81ed37e7019ca72a0b7b389dd456499ed07b9fc505e",
+    "docs/release/status.json": "5fce54d6b808f107b5f983e617809313597573dc4a3129fa619df56da0ccf0c8",
+    "docs/release/screenshots.json": "ded0c9c5c08ac15ab30fdf7bb648b2fd69206a7f73b726243a1b06e816b44284",
+    "docs/portfolio/case-study.md": "0c92894da435d62b8f18e2b3b42f7048d775b7fac3998989c000e37c101fee23",
+    "docs/portfolio/coverage.md": "2a486867c55f3f155a2d1fe03ca0206c1c167276fd2f5dad6bb0e22bf655a400",
+    "docs/portfolio/demo-script.md": "265b10c299bab653aba80d2457802c10576b2e84216745ea2288508846e0ac12",
+    "docs/portfolio/benchmark.json": "676a9e766528849a2166e1192b288e442d13b85446b4255c37190eea8d16ca99",
+    "docs/testing/phase10-report.md": "e766ce26df17cc25b28fc50ad1fedf093f830f906f3d37b6c7ab0b28ec0def39"
+  },
+  "release_ready": false,
+  "published": false,
+  "pending_gates": [
+    "n8n: remediar dependências e repetir os quatro workflows antes de liberar partida",
+    "navegador: concluir QA visual, teclado, contraste, responsividade e capturas reais",
+    "Power BI Desktop: validar importação, relacionamentos e medidas no aplicativo",
+    "cobertura funcional: revisar e concluir itens parciais do mapa de requisitos antes de declarar atendimento integral",
+    "produção: revisar infraestrutura, TLS, operação, recuperação e obter aceite final",
+    "publicação: obter autorização explícita para destino e conteúdo após a revisão"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "product": "Chronos 1.0",
+  "review_date": "2026-10-27",
+  "execution_allowed": false,
+  "status": "blocked_pending_dependency_remediation",
+  "installed_version": "2.44.6",
+  "candidate_version": "2.45.4",
+  "installed_audit": {
+    "low": 3,
+    "moderate": 78,
+    "high": 82,
+    "critical": 12,
+    "total": 175
+  },
+  "candidate_audit": {
+    "low": 3,
+    "moderate": 75,
+    "high": 81,
+    "critical": 8,
+    "total": 167
+  },
+  "reason": "A candidata 2.45.4 ainda apresenta avisos altos/críticos. Runtime 2.44.6 preservado e bloqueado; não aplicar downgrade ou overrides em massa. O consumidor local permanece disponível.",
+  "reopen_condition": "Revisar uma árvore corrigida, repetir auditoria e testes reais dos quatro workflows antes de liberar partida ou integração no ambiente development.",
+  "candidate_audit_date": "2026-10-27",
+  "installed_audit_date": "2026-10-26",
+  "candidate_installed": false
+}

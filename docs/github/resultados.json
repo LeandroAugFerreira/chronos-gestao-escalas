@@ -1,0 +1,29 @@
+{
+  "project": "chronos",
+  "backend_exit": 0,
+  "frontend": [
+    {
+      "script": "test",
+      "exit_code": 0,
+      "seconds": 52.27
+    },
+    {
+      "script": "build",
+      "exit_code": 0,
+      "seconds": 18.5
+    }
+  ],
+  "application_logic_modified": false,
+  "original_files_modified": false,
+  "backend_latest": {
+    "tests": 183,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "frontend_unit_passed": 88,
+  "frontend_test_files": 10,
+  "postgresql_executed": false,
+  "frontend_dependency_restoration": "npm ci em diretório de QA novo, usando o mesmo package-lock, com scripts de instalação desativados; nenhum manifest ou versão declarada foi modificado.",
+  "tests_label": "182 aprovados, 1 ignorado"
+}
