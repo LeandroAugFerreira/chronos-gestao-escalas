@@ -92,7 +92,7 @@ def main():
                     page.get_by_label("Senha", exact=True).fill(password)
                     page.get_by_role("button", name="Entrar na plataforma").click()
                     expect(page.get_by_role("heading", name="O ritmo da sua operação.")).to_be_visible(timeout=30000)
-                    expect(page.get_by_text("Colaboradores ativos")).to_be_visible(timeout=30000)
+                    expect(page.get_by_text("Colaboradores ativos", exact=True)).to_be_visible(timeout=30000)
                     expect(page.get_by_text("Dados do banco de demonstração")).to_be_visible()
                     page.screenshot(path=str(ARTIFACTS / "chronos-visao-geral-qa.png"), full_page=True)
 
