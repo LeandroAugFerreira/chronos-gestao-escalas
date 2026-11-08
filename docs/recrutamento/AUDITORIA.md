@@ -1,6 +1,6 @@
 # Auditoria técnica de recrutamento — Chronos 1.0
 
-**Escopo:** leitura estática do código-fonte no commit inicial \`fdc0ba5a8ca9fc2b2b5ec14fa7d08f1a68603ce3\` (08/11/2026), mais verificação automatizada posterior nesta branch. **Não é pentest, certificação jurídica, auditoria de produção ou verificação de todas as telas.**
+**Escopo:** leitura estática do código-fonte no commit inicial `fdc0ba5a8ca9fc2b2b5ec14fa7d08f1a68603ce3` (08/11/2026), mais verificação automatizada posterior nesta branch. **Não é pentest, certificação jurídica, auditoria de produção ou verificação de todas as telas.**
 
 ## Parecer para recrutadores
 
