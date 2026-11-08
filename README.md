@@ -118,3 +118,12 @@ A escolha de licença depende da aprovação do autor; nenhuma licença nova foi
 [Chronos — Gestão de Jornadas e Escalas no portfólio](https://leandroaugferreira.github.io/chronos.html) · [Portfólio completo](https://leandroaugferreira.github.io/).
 
 Repositório: [LeandroAugFerreira/chronos-gestao-escalas](https://github.com/LeandroAugFerreira/chronos-gestao-escalas).
+
+## 16. Preparação para recrutamento e evidências reproduzíveis
+
+- [Auditoria, estudo de caso, arquitetura, entrevista e plano](docs/recrutamento/AUDITORIA.md): documentação técnica com limitações e distinção entre recursos de código e uso real.
+- [Demonstração interativa web](https://leandroaugferreira.github.io/chronos-demo.html): visualização estática do microensaio 3/2 profissionais; **não** hospeda o backend nem executa OR-Tools no navegador.
+- [GitHub Actions — Chromium real e testes](https://github.com/LeandroAugFerreira/chronos-gestao-escalas/actions/runs/42512605602): 184 testes backend aprovados/1 ignorado, 88 testes frontend aprovados, build e login/dashboard/otimização em Chromium.
+- [Protocolo detalhado do smoke](docs/recrutamento/E2E_BROWSER.md) e [evidências](docs/recrutamento/EVIDENCIAS.md).
+
+O caso Hospital Horizonte contém dados fictícios e não comprova validade clínica/trabalhista, ganhos de produtividade ou economia. O benchmark pequeno **não demonstrou superioridade de cobertura ou custo do solver** em relação à política first-fit. A integração n8n permanece bloqueada por segurança.

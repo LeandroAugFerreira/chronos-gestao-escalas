@@ -17,3 +17,5 @@ htmlcov/
 
 # Pacotes locais para revisão; sem publicação automática.
 releases/
+# Capturas locais de teste de navegador com dados sintéticos
+artifacts/browser/

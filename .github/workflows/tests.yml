@@ -28,3 +28,31 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+
+  browser-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Instalar dependências declaradas e Chromium para QA
+        run: |
+          python -m pip install -r backend/requirements-lock.txt
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+          npm --prefix frontend ci
+      - name: Abrir a aplicação no navegador e verificar a fixture sintética
+        run: python backend/scripts/browser_smoke_recruiting.py
+      - name: Salvar capturas fictícias do navegador
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chronos-recruiter-browser-evidence
+          path: artifacts/browser/*.png
+          if-no-files-found: ignore
+          retention-days: 7
