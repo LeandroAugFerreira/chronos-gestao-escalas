@@ -35,6 +35,6 @@ A apresentação recomendada é um **tour estático** [chronos-demo.html](https:
 
 A branch de recrutamento inclui teste de benchmark reproduzível e job de Chromium com banco temporário. A página web estática, quando publicada no portfólio, ficará no repositório do site, separada da API.
 
-A integração à main deve ocorrer somente após CI e revisão do diff. Esta entrega não altera decisões do solver, regras trabalhistas nem automatizações existentes.
+As alterações foram integradas à main pelo [Pull Request #1](https://github.com/LeandroAugFerreira/chronos-gestao-escalas/pull/1) após CI aprovado. Esta entrega não alterou decisões do solver, regras trabalhistas nem automatizações existentes. O backend não foi publicado como serviço.
 
 [Auditoria](AUDITORIA.md) · [Evidências](EVIDENCIAS.md) · [Arquitetura](ARQUITETURA.md).

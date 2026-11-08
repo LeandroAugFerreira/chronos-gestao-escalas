@@ -82,7 +82,7 @@ Esses controles não equivalem a pentest, varredura atualizada de toda a árvore
 
 ## Verificações novas
 
-A branch de revisão acrescenta [test_recruiting_evidence.py](../../backend/tests/test_recruiting_evidence.py), que verifica hash/declarações do benchmark e executa o solver sobre a fixture com uma repetição. Também configura [smoke de navegador](../../backend/scripts/browser_smoke_recruiting.py) em runner isolado. **Os números finais e os links de CI devem ser preenchidos somente após a conclusão de cada execução.** Consulte [EVIDENCIAS.md](EVIDENCIAS.md).
+A branch de revisão acrescenta [test_recruiting_evidence.py](../../backend/tests/test_recruiting_evidence.py), que verifica hash/declarações do benchmark e executa o solver sobre a fixture com uma repetição. Também configura [smoke de navegador](../../backend/scripts/browser_smoke_recruiting.py) em runner isolado. **A validação foi concluída:** [GitHub Actions #42513492013](https://github.com/LeandroAugFerreira/chronos-gestao-escalas/actions/runs/42513492013) aprovou os testes e o navegador no commit revisto; detalhes em [EVIDENCIAS.md](EVIDENCIAS.md).
 
 ## Recomendação
 
