@@ -43,6 +43,6 @@ O fluxo integrado exercitou revisão, cálculo, submissão, recusa de autoaprova
 
 ## Limitações e evolução
 
-O n8n permanece com partida bloqueada após auditoria de dependências; sua execução real na Fase 7 é evidência histórica. QA de navegador, capturas e Power BI Desktop não estão concluídos. Parte da manutenção especializada é via API; importação genérica e publicação interna final ainda não estão concluídas/liberadas. O [mapa de cobertura](coverage.md) torna os limites verificáveis.
+O n8n permanece com partida bloqueada após auditoria de dependências; sua execução real na Fase 7 é evidência histórica. Um smoke limitado de navegador real (login, Dashboard e acesso à área de otimização) foi aprovado posteriormente no CI, com capturas de dados sintéticos. QA integral de navegador, teclado/contraste/responsividade e Power BI Desktop continuam pendentes. Parte da manutenção especializada é via API; importação genérica e publicação interna final ainda não estão concluídas/liberadas. O [mapa de cobertura](coverage.md) torna os limites verificáveis.
 
 Próximas decisões: remediar/revalidar n8n, concluir QA acessível e visual, validar Power BI nativo, revisar lacunas funcionais/operacionais e obter aceite de release. Nenhuma publicação, certificação jurídica, implantação hospitalar ou resultado clínico real é alegado por este case.

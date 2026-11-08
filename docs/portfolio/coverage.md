@@ -21,7 +21,7 @@ Esta matriz liga o [escopo original](../requirements/requirements.md) a implemen
 | RNF01/02/05 | Stack/modelo modular, UTC/fuso, minutos inteiros, cálculos exatos e regras configuráveis | Validações por fase não equivalem a operação hospitalar real |
 | RNF03/06 | Escopos, limite HTTP, erros, correlação, idempotência, workers e recuperação | Não é teste de intrusão/certificação de segurança |
 | RNF04 | Fixture sem paciente/CPF, minimização e segredos fora do pacote | Política institucional completa de retenção/exclusão e automação de expurgo não foram entregues |
-| RNF07 | Identidade temporal, temas e testes de componentes | Navegador real, contraste, teclado, responsividade e capturas ainda pendentes |
+| RNF07 | Identidade temporal, temas e testes de componentes | Smoke Chromium de login/dashboard/otimização e capturas sintéticas aprovados na revisão de recrutamento; QA completo de contraste, teclado, responsividade e fluxos permanece pendente |
 | RNF08/09 | Setup local, runtime fora do OneDrive, testes registrados, pacote verificável | Dependências precisam ser instaladas; ZIP não inclui runtime/banco; testes históricos conservam data/escopo |
 | RNF10 | Nenhuma publicação, envio a terceiros ou mudança em outro projeto | Publicação futura exige autorização explícita após revisão |
 | RNF11 | Paginação, filtros, OpenAPI no desenvolvimento, erros e logs operacionais | Retenção/configuração operacional completa de logs permanece revisão de produção |

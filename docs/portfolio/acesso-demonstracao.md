@@ -24,9 +24,9 @@ O acesso não permite consultar cadastros individuais de pessoas, salários, pro
 
 O projeto está disponível localmente em **http://127.0.0.1:5187**. Esse endereço só funciona no computador que executa o Chronos.
 
-**O link público ainda não foi configurado.** Para divulgar uma demonstração utilizável no portfólio ou LinkedIn, primeiro disponibilize uma instância própria de demonstração com endereço HTTPS público e revise os requisitos de operação e segurança. Depois, associe as credenciais acima à conta de demonstração dessa instância. Criar a conta local não cria uma conta em um servidor externo.
+**A instância autenticada do Chronos continua sem endereço público.** Para divulgar o login real, seria necessário hospedar uma instância de demonstração própria em HTTPS e revisar os requisitos de operação e segurança. **Existe agora um [tour interativo estático](https://leandroaugferreira.github.io/chronos-demo.html)** para apresentar resultados sintéticos do microensaio em navegador, mas ele não acessa a API nem executa o solver. Depois, associe as credenciais acima à conta de demonstração dessa instância. Criar a conta local não cria uma conta em um servidor externo.
 
-Nenhum serviço, post do LinkedIn ou alteração do portfólio foi publicado nesta etapa. O n8n continua bloqueado e as pendências de produção permanecem em [estado da entrega](../release/status.json).
+A publicação do tour estático e de links no portfólio ocorreu em etapa posterior; nenhum backend, login online ou post do LinkedIn foi publicado nesta revisão. O n8n continua bloqueado e as pendências de produção permanecem em [estado da entrega](../release/status.json).
 
 ## Apresentação pública do projeto
 
