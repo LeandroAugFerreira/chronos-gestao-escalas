@@ -1,4 +1,4 @@
-"""Chronos 1.0: configuração tipada; nenhuma chave insegura de reserva."""
+"""Chronos 2.0: configuração tipada; nenhuma chave insegura de reserva."""
 
 import os
 import sys
@@ -9,8 +9,8 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 PROJECT_ROOT = Path(sys._MEIPASS) if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[3]
 PRODUCT_NAME = "Chronos"
-PRODUCT_VERSION = "1.0"
-PRODUCT_TITLE = "Chronos 1.0 — Gestão Inteligente de Jornadas e Escalas"
+PRODUCT_VERSION = "2.0"
+PRODUCT_TITLE = "Chronos 2.0 — Gestão Inteligente de Jornadas e Escalas"
 DEMO_FILE = PROJECT_ROOT / "data" / "synthetic" / "hospital_horizonte.json"
 ALLOWED_ORIGINS = tuple(
     origin.strip()

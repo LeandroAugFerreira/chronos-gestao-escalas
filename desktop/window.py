@@ -9,14 +9,14 @@ class ControlWindow:
     def __init__(self, url, folder, bundle, factory, hidden=False):
         self.url, self.folder, self.bundle, self.factory = url, folder, bundle, factory
         self.root = tk.Tk()
-        self.root.title("Chronos 1.0 - Demonstração local")
+        self.root.title("Chronos 2.0 - Demonstração local")
         self.root.geometry("620x440"); self.root.resizable(False, False)
         self.root.configure(background="#101f2a")
         self.root.iconbitmap(str(bundle / "desktop/chronos.ico"))
         style = ttk.Style(self.root); style.theme_use("clam")
         style.configure("TButton", padding=9, font=("Segoe UI", 10))
         frame = tk.Frame(self.root, bg="#101f2a", padx=26, pady=20); frame.pack(fill="both", expand=True)
-        tk.Label(frame,text="Chronos 1.0",font=("Segoe UI",24,"bold"),fg="#e9b98c",bg="#101f2a").pack(anchor="w")
+        tk.Label(frame,text="Chronos 2.0",font=("Segoe UI",24,"bold"),fg="#e9b98c",bg="#101f2a").pack(anchor="w")
         tk.Label(frame,text="Gestão Inteligente de Jornadas e Escalas",font=("Segoe UI",11),fg="#f0eee8",bg="#101f2a").pack(anchor="w",pady=(0,15))
         tk.Label(frame,text="Pronto para usar. Mantenha esta janela aberta.",fg="#b0bfc8",bg="#101f2a",font=("Segoe UI",10)).pack(anchor="w")
         tk.Label(frame,text=url,fg="#e9b98c",bg="#101f2a",font=("Segoe UI",11,"bold")).pack(anchor="w",pady=(6,12))

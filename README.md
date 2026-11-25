@@ -1,4 +1,4 @@
-# Chronos — Gestão de Jornadas e Escalas
+# Chronos 2.0 — Gestão de Jornadas e Escalas
 
 ## 1. Apresentação
 
@@ -103,7 +103,7 @@ Esse script confere a fixture, os documentos, testes backend, frontend e build. 
 
 ## 13. Limitações conhecidas
 
-Demonstração 1.0/Fase 10, sem liberação de produção. Não comprova cobertura universal, conformidade jurídica, economia ou produtividade humana. A integração n8n permanece bloqueada pela política existente. PostgreSQL e testes de navegador não foram homologados novamente nesta preparação.
+Demonstração 2.0, evoluída da base 1.0/Fase 10, sem liberação de produção. Não comprova cobertura universal, conformidade jurídica, economia ou produtividade humana. A integração n8n permanece bloqueada pela política existente. PostgreSQL e testes de navegador não foram homologados novamente nesta preparação.
 
 ## 14. Estado atual
 
@@ -127,3 +127,13 @@ Repositório: [LeandroAugFerreira/chronos-gestao-escalas](https://github.com/Lea
 - [Protocolo detalhado do smoke](docs/recrutamento/E2E_BROWSER.md) e [evidências](docs/recrutamento/EVIDENCIAS.md).
 
 O caso Hospital Horizonte contém dados fictícios e não comprova validade clínica/trabalhista, ganhos de produtividade ou economia. O benchmark pequeno **não demonstrou superioridade de cobertura ou custo do solver** em relação à política first-fit. A integração n8n permanece bloqueada por segurança.
+
+## 17. Evolução para Chronos 2.0 — 25/11/2026
+
+A versão 2.0 acrescenta **Transição de jornadas** à base de planejamento: comparação por data das etapas normativas, carga contratual, salário mensal preservado e valor da hora. Regimes especiais e condições de negociação permanecem sujeitos à revisão humana.
+
+- [Notas, fontes e recorte da atualização](docs/versions/chronos-2.0.md).
+- [Comparação 1.0 → 2.0 no portfólio](https://leandroaugferreira.github.io/chronos-2.0.html).
+- [Apresentação 1.0 preservada](https://leandroaugferreira.github.io/chronos-1.0.html).
+
+As evidências de novembro anteriores a esta seção pertencem à base 1.0. A nova comparação não certifica uma escala nem migra automaticamente regras existentes.

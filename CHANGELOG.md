@@ -1,5 +1,12 @@
 # Chronos 1.0 — Changelog
 
+## 2.0 — 25/11/2026
+
+- Comparação normativa por data, limites declarados, repousos e referência de valor da hora com preservação salarial.
+- Condições explícitas para a cautelar de 8h24 e revisão de regimes especiais.
+- Área autenticada, exportação com fontes e digest, testes de regressão e exemplos fictícios no portfólio.
+- Histórico da base 1.0 preservado e dados desktop isolados em 2.0-demo.
+
 ## Chronos 1.0 — identidade, Windows e manual online (2026-11-01)
 
 - Identidade própria em azul profundo, cobre e papel, símbolo vetorial e assinatura do autor. Login, navegação, dashboard e componentes compartilhados atualizados; temas e permissões preservados.

@@ -17,6 +17,7 @@ from app.api.simulation import router as simulation_router
 from app.api.optimization import router as optimization_router
 from app.api.automation import router as automation_router
 from app.api.analytics import router as analytics_router
+from app.api.labor_transition import router as transition_router
 from app.core.config import PRODUCT_TITLE, PRODUCT_VERSION, Settings
 from app.core.database import build_engine, session_factory
 from app.core.request_limits import RequestLimits, SECURITY_HEADERS
@@ -27,7 +28,7 @@ def create_app(settings: Settings | None = None):
     application = FastAPI(title=PRODUCT_TITLE, version=PRODUCT_VERSION,
         docs_url=None if production else "/docs", redoc_url=None if production else "/redoc",
         openapi_url=None if production else "/openapi.json",
-        description="Fase 9: segurança, recuperação e validação integrada dos módulos Chronos 1.0.")
+        description="Chronos 2.0: planejamento de jornadas e comparação versionada da transição normativa brasileira.")
     engine = build_engine(settings)
     application.state.settings = settings
     application.state.engine = engine
@@ -89,6 +90,7 @@ def create_app(settings: Settings | None = None):
     application.include_router(optimization_router)
     application.include_router(automation_router)
     application.include_router(analytics_router)
+    application.include_router(transition_router)
     return application
 
 

@@ -1,6 +1,6 @@
 param([string]$RuntimeDir = $env:CHRONOS_RUNTIME_DIR, [string[]]$TestArgs = @('-q'))
 $ErrorActionPreference = 'Stop'
-if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\1.0' }
+if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\2.0' }
 $binaryPath = Join-Path $RuntimeDir 'postgres\pgsql\bin\pg_ctl.exe'
 $dataPath = Join-Path $RuntimeDir 'pg-test-data'
 $credentialsPath = Join-Path $RuntimeDir 'pg-test.env'

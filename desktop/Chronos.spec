@@ -23,6 +23,6 @@ a = Analysis([str(root / 'desktop/launcher.py')], pathex=[str(root), str(root / 
     excludes=['pytest', '_pytest', 'PyInstaller', 'psycopg', 'torch', 'matplotlib', 'IPython', 'notebook', 'scipy', 'jupyter', 'sphinx', 'edge_tts'],
     noarchive=False)
 pyz = PYZ(a.pure)
-exe = EXE(pyz, a.scripts, a.binaries, a.datas, [], name='Chronos', debug=False,
+exe = EXE(pyz, a.scripts, a.binaries, a.datas, [], name='Chronos-2.0', debug=False,
     bootloader_ignore_signals=False, strip=False, upx=False, console=False,
     icon=str(root / 'desktop/chronos.ico'), version=str(root / 'desktop/version.txt'))

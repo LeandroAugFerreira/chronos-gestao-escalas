@@ -1,6 +1,6 @@
 param([string]$RuntimeDir = $env:CHRONOS_RUNTIME_DIR)
 $ErrorActionPreference = 'Stop'
-if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\1.0' }
+if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\2.0' }
 if (-not $env:CHRONOS_TEST_POSTGRES_URL) {
     throw 'Defina CHRONOS_TEST_POSTGRES_URL para um banco PostgreSQL exclusivo terminado em _test. Consulte docs\testing\phase2.md.'
 }

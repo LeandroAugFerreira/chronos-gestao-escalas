@@ -44,7 +44,7 @@ def test_fixture_role_and_skill_links_are_consistent():
 
 
 def test_health_and_summary_api_contract():
-    assert client.get("/api/v1/health").json()["version"] == "1.0"
+    assert client.get("/api/v1/health").json()["version"] == "2.0"
     response = client.get("/api/v1/demo/summary")
     assert response.status_code == 200
     payload = response.json()
@@ -72,8 +72,8 @@ def test_cors_does_not_allow_arbitrary_origins():
 
 def test_openapi_identifies_chronos_1_0():
     schema = client.get("/openapi.json").json()
-    assert schema["info"]["version"] == "1.0"
-    assert "Chronos 1.0" in schema["info"]["title"]
+    assert schema["info"]["version"] == "2.0"
+    assert "Chronos 2.0" in schema["info"]["title"]
 
 
 def test_people_not_exposed_without_database_or_authentication():

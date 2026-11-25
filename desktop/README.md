@@ -1,10 +1,10 @@
-# Chronos 1.0 — demonstração para Windows
+# Chronos 2.0 — demonstração para Windows
 
 O executável reúne a interface compilada, a API local, o processador de otimização e os recursos de demonstração. Não exige Python ou Node.js instalados no computador do visitante.
 
 Abra `Chronos.exe` e aguarde a janela indicar que está pronto. O endereço local é exibido nessa janela. Mantenha-a aberta durante o uso. A conta pública de consulta usa organização `horizonte`, usuário `demo` e senha `ChronosDemo@2026`. Para testar edições e simulações, crie seu próprio administrador no botão da janela de controle.
 
-Os dados são criados em `%LOCALAPPDATA%\Chronos\1.0-demo`. O executável não transporta `.env`, banco, conta administrativa ou segredo da instalação de desenvolvimento. A primeira abertura cria uma base a partir do fixture sintético e um segredo próprio da instalação. Execuções seguintes preservam os cadastros.
+Os dados são criados em `%LOCALAPPDATA%\Chronos\2.0-demo`. O executável não transporta `.env`, banco, conta administrativa ou segredo da instalação de desenvolvimento. A primeira abertura cria uma base a partir do fixture sintético e um segredo próprio da instalação. Execuções seguintes preservam os cadastros.
 
 O botão Manual abre o guia HTML incluído no pacote. O mesmo guia fica disponível no portfólio. O agendamento automático e n8n permanecem desativados. Esta é uma demonstração local para avaliação, sem assinatura digital ou liberação para produção.
 

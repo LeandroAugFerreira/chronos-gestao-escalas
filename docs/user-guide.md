@@ -68,3 +68,7 @@ CSV baixa um ZIP de tabelas, manifest e preparação Power BI. XLSX contém resu
 - **503/500:** informe o identificador de correlação ao operador. Não compartilhe `.env`, cookies, tokens ou dumps de banco.
 
 Use **Sair** para revogar a sessão no servidor. Em falha de rede, a tela não confirma uma saída que não foi efetivada. Para backup e recuperação, use o [procedimento operacional](operations/recovery.md); não substitua o banco ativo por um arquivo antigo durante a demonstração.
+
+## Atualização 2.0: comparar a transição de jornadas
+
+No menu **Transição de jornadas**, informe a data, o salário mensal e as premissas do contrato e da jornada. Use **Comparar etapas**, leia os pontos de ajuste e revisão e, se necessário, escolha **Exportar comparação e fontes**. Alterar uma premissa limpa o resultado anterior. A versão 1.0 e seu manual continuam no histórico do portfólio.

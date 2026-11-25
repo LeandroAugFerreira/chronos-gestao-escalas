@@ -1,0 +1,448 @@
+{
+  "product_version": "2.0",
+  "policy_version": "br-ec141-2026.11.25",
+  "reviewed_on": "2026-11-25",
+  "phases": [
+    {
+      "id": "historical_44",
+      "name": "Referência anterior à transição",
+      "from": "2000-01-01",
+      "until": "2026-12-16",
+      "weekly_minutes": 2640,
+      "rest_days": 1,
+      "monthly_divisor_hours": 220
+    },
+    {
+      "id": "transition_42",
+      "name": "Etapa de 42 horas",
+      "from": "2026-12-16",
+      "until": "2027-12-16",
+      "weekly_minutes": 2520,
+      "rest_days": 2,
+      "monthly_divisor_hours": 210
+    },
+    {
+      "id": "final_40",
+      "name": "Etapa de 40 horas",
+      "from": "2027-12-16",
+      "until": null,
+      "weekly_minutes": 2400,
+      "rest_days": 2,
+      "monthly_divisor_hours": 200
+    }
+  ],
+  "sources": [
+    {
+      "id": "ec141",
+      "title": "EC 141/2026",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm",
+      "articles": "arts. 1º, 2º, 4º, 6º, 7º e 8º"
+    },
+    {
+      "id": "decree13173",
+      "title": "Decreto 13.173/2026",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13173.htm",
+      "articles": "arts. 2º, 3º, 5º e 7º"
+    },
+    {
+      "id": "portaria2041",
+      "title": "Portaria MTE 2.041/2026",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-mte-n-2.041-de-19-de-novembro-de-2026-745783275",
+      "articles": "arts. 3º, 6º a 10; publicação de 23/11/2026; observar retificação e decisões judiciais"
+    },
+    {
+      "id": "stf8041",
+      "title": "STF · cautelar nas ADIs 8.041 e 8.042",
+      "url": "https://portal.stf.jus.br/processos/downloadPeca.asp?ext=.pdf&id=15392248509",
+      "articles": "decisão de 12/11/2026, dispositivo, itens I, IV, VII e VIII; interpretação sujeita à evolução do processo"
+    }
+  ],
+  "scope": "Comparação de premissas declaradas. Regimes especiais, normas coletivas, decisões judiciais e histórico de descansos exigem revisão. Não certifica conformidade nem altera escalas ou regras já gravadas.",
+  "synthetic": true,
+  "delivery": "Precomputed examples; no API or OR-Tools runs in the static portfolio.",
+  "examples": [
+    {
+      "id": "base",
+      "label": "Base histórica · 44 horas",
+      "result": {
+        "product_version": "2.0",
+        "policy_version": "br-ec141-2026.11.25",
+        "reviewed_on": "2026-11-25",
+        "phase": {
+          "id": "historical_44",
+          "name": "Referência anterior à transição",
+          "from": "2000-01-01",
+          "until": "2026-12-16",
+          "weekly_minutes": 2640,
+          "rest_days": 1,
+          "monthly_divisor_hours": 220
+        },
+        "assumptions": {
+          "reference_date": "2026-12-15",
+          "contract_weekly_minutes": 2640,
+          "planned_weekly_minutes": 2640,
+          "planned_daily_minutes": 480,
+          "rest_days_24h": 1,
+          "monthly_salary_cents": 330000,
+          "proposed_salary_cents": null,
+          "more_favorable_divisor_hours": null,
+          "regime": "regular",
+          "collective_status": "not_reviewed",
+          "collective_rest_compensation": false,
+          "use_interim_daily_exception": false
+        },
+        "effective_weekly_minutes": 2640,
+        "monthly_divisor_hours": "220",
+        "monthly_salary_cents": 330000,
+        "baseline_hourly_cents": 1500,
+        "hourly_cents": 1500,
+        "hourly_change_percent": "0.00",
+        "baseline_version": "1.0",
+        "baseline_contract_weekly_minutes": 2640,
+        "status": "review_required",
+        "findings": [
+          {
+            "code": "WEEKLY_LIMIT",
+            "status": "within",
+            "message": "Comparação da carga semanal declarada com o menor limite entre contrato e etapa normativa.",
+            "source_ids": [
+              "ec141"
+            ]
+          },
+          {
+            "code": "DAILY_LIMIT",
+            "status": "within",
+            "message": "Referência diária para esta simulação: 480 minutos líquidos. Compensação diversa exige análise do instrumento aplicável.",
+            "source_ids": [
+              "ec141",
+              "stf8041"
+            ]
+          },
+          {
+            "code": "WEEKLY_RESTS",
+            "status": "within",
+            "message": "Referência: 1 repouso(s) semanal(is) de 24 horas. Dois repousos não significam necessariamente 48 horas consecutivas; interjornada e histórico são verificações próprias.",
+            "source_ids": [
+              "ec141",
+              "portaria2041"
+            ]
+          },
+          {
+            "code": "SALARY_PRESERVATION",
+            "status": "within",
+            "message": "Salário mensal preservado na comparação; o valor da hora pode mudar com o divisor.",
+            "source_ids": [
+              "ec141",
+              "decree13173"
+            ]
+          },
+          {
+            "code": "SCOPE_REVIEW",
+            "status": "review",
+            "message": "Resultado de planejamento, sem aprovação jurídica automática. Verificar pausas, interjornada, trabalho noturno, domingos, qualificações, enquadramento e instrumentos coletivos antes de usar uma escala.",
+            "source_ids": [
+              "ec141",
+              "decree13173",
+              "portaria2041",
+              "stf8041"
+            ]
+          },
+          {
+            "code": "FUTURE_REFERENCE",
+            "status": "review",
+            "message": "Projeção com as fontes verificadas em 25/11/2026. Conferir atos posteriores antes da data de aplicação.",
+            "source_ids": [
+              "ec141",
+              "stf8041"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "ec141",
+            "title": "EC 141/2026",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm",
+            "articles": "arts. 1º, 2º, 4º, 6º, 7º e 8º"
+          },
+          {
+            "id": "decree13173",
+            "title": "Decreto 13.173/2026",
+            "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13173.htm",
+            "articles": "arts. 2º, 3º, 5º e 7º"
+          },
+          {
+            "id": "portaria2041",
+            "title": "Portaria MTE 2.041/2026",
+            "url": "https://www.in.gov.br/web/dou/-/portaria-mte-n-2.041-de-19-de-novembro-de-2026-745783275",
+            "articles": "arts. 3º, 6º a 10; publicação de 23/11/2026; observar retificação e decisões judiciais"
+          },
+          {
+            "id": "stf8041",
+            "title": "STF · cautelar nas ADIs 8.041 e 8.042",
+            "url": "https://portal.stf.jus.br/processos/downloadPeca.asp?ext=.pdf&id=15392248509",
+            "articles": "decisão de 12/11/2026, dispositivo, itens I, IV, VII e VIII; interpretação sujeita à evolução do processo"
+          }
+        ],
+        "digest": "624cd25718dde6b5a21d6401c32dd92e7db2635121d49f00f9d3f34f07a89df5"
+      }
+    },
+    {
+      "id": "transition",
+      "label": "Transição · 42 horas",
+      "result": {
+        "product_version": "2.0",
+        "policy_version": "br-ec141-2026.11.25",
+        "reviewed_on": "2026-11-25",
+        "phase": {
+          "id": "transition_42",
+          "name": "Etapa de 42 horas",
+          "from": "2026-12-16",
+          "until": "2027-12-16",
+          "weekly_minutes": 2520,
+          "rest_days": 2,
+          "monthly_divisor_hours": 210
+        },
+        "assumptions": {
+          "reference_date": "2026-12-16",
+          "contract_weekly_minutes": 2640,
+          "planned_weekly_minutes": 2520,
+          "planned_daily_minutes": 504,
+          "rest_days_24h": 2,
+          "monthly_salary_cents": 330000,
+          "proposed_salary_cents": null,
+          "more_favorable_divisor_hours": null,
+          "regime": "regular",
+          "collective_status": "absent_at_cutoff",
+          "collective_rest_compensation": false,
+          "use_interim_daily_exception": true
+        },
+        "effective_weekly_minutes": 2520,
+        "monthly_divisor_hours": "210",
+        "monthly_salary_cents": 330000,
+        "baseline_hourly_cents": 1500,
+        "hourly_cents": 1571,
+        "hourly_change_percent": "4.76",
+        "baseline_version": "1.0",
+        "baseline_contract_weekly_minutes": 2640,
+        "status": "review_required",
+        "findings": [
+          {
+            "code": "WEEKLY_LIMIT",
+            "status": "within",
+            "message": "Comparação da carga semanal declarada com o menor limite entre contrato e etapa normativa.",
+            "source_ids": [
+              "ec141"
+            ]
+          },
+          {
+            "code": "INTERIM_DAILY_EXCEPTION",
+            "status": "review",
+            "message": "Hipótese explícita da cautelar do STF: ausência de ACT/CCT até 15/12/2026, distribuição em cinco dias e até 8h24 líquidas por dia somente durante a transição. Conferir vigência da decisão e enquadramento antes de adotar.",
+            "source_ids": [
+              "stf8041"
+            ]
+          },
+          {
+            "code": "DAILY_LIMIT",
+            "status": "within",
+            "message": "Referência diária para esta simulação: 504 minutos líquidos. Compensação diversa exige análise do instrumento aplicável.",
+            "source_ids": [
+              "ec141",
+              "stf8041"
+            ]
+          },
+          {
+            "code": "WEEKLY_RESTS",
+            "status": "within",
+            "message": "Referência: 2 repouso(s) semanal(is) de 24 horas. Dois repousos não significam necessariamente 48 horas consecutivas; interjornada e histórico são verificações próprias.",
+            "source_ids": [
+              "ec141",
+              "portaria2041"
+            ]
+          },
+          {
+            "code": "SALARY_PRESERVATION",
+            "status": "within",
+            "message": "Salário mensal preservado na comparação; o valor da hora pode mudar com o divisor.",
+            "source_ids": [
+              "ec141",
+              "decree13173"
+            ]
+          },
+          {
+            "code": "SCOPE_REVIEW",
+            "status": "review",
+            "message": "Resultado de planejamento, sem aprovação jurídica automática. Verificar pausas, interjornada, trabalho noturno, domingos, qualificações, enquadramento e instrumentos coletivos antes de usar uma escala.",
+            "source_ids": [
+              "ec141",
+              "decree13173",
+              "portaria2041",
+              "stf8041"
+            ]
+          },
+          {
+            "code": "FUTURE_REFERENCE",
+            "status": "review",
+            "message": "Projeção com as fontes verificadas em 25/11/2026. Conferir atos posteriores antes da data de aplicação.",
+            "source_ids": [
+              "ec141",
+              "stf8041"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "ec141",
+            "title": "EC 141/2026",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm",
+            "articles": "arts. 1º, 2º, 4º, 6º, 7º e 8º"
+          },
+          {
+            "id": "decree13173",
+            "title": "Decreto 13.173/2026",
+            "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13173.htm",
+            "articles": "arts. 2º, 3º, 5º e 7º"
+          },
+          {
+            "id": "portaria2041",
+            "title": "Portaria MTE 2.041/2026",
+            "url": "https://www.in.gov.br/web/dou/-/portaria-mte-n-2.041-de-19-de-novembro-de-2026-745783275",
+            "articles": "arts. 3º, 6º a 10; publicação de 23/11/2026; observar retificação e decisões judiciais"
+          },
+          {
+            "id": "stf8041",
+            "title": "STF · cautelar nas ADIs 8.041 e 8.042",
+            "url": "https://portal.stf.jus.br/processos/downloadPeca.asp?ext=.pdf&id=15392248509",
+            "articles": "decisão de 12/11/2026, dispositivo, itens I, IV, VII e VIII; interpretação sujeita à evolução do processo"
+          }
+        ],
+        "digest": "08808faa030cb79909439fba7c453d54609a3d8e1b1cd2ee1c653a2ac218daaf"
+      }
+    },
+    {
+      "id": "final",
+      "label": "Etapa seguinte · 40 horas",
+      "result": {
+        "product_version": "2.0",
+        "policy_version": "br-ec141-2026.11.25",
+        "reviewed_on": "2026-11-25",
+        "phase": {
+          "id": "final_40",
+          "name": "Etapa de 40 horas",
+          "from": "2027-12-16",
+          "until": null,
+          "weekly_minutes": 2400,
+          "rest_days": 2,
+          "monthly_divisor_hours": 200
+        },
+        "assumptions": {
+          "reference_date": "2027-12-16",
+          "contract_weekly_minutes": 2640,
+          "planned_weekly_minutes": 2400,
+          "planned_daily_minutes": 480,
+          "rest_days_24h": 2,
+          "monthly_salary_cents": 330000,
+          "proposed_salary_cents": null,
+          "more_favorable_divisor_hours": null,
+          "regime": "regular",
+          "collective_status": "not_reviewed",
+          "collective_rest_compensation": false,
+          "use_interim_daily_exception": false
+        },
+        "effective_weekly_minutes": 2400,
+        "monthly_divisor_hours": "200",
+        "monthly_salary_cents": 330000,
+        "baseline_hourly_cents": 1500,
+        "hourly_cents": 1650,
+        "hourly_change_percent": "10.00",
+        "baseline_version": "1.0",
+        "baseline_contract_weekly_minutes": 2640,
+        "status": "review_required",
+        "findings": [
+          {
+            "code": "WEEKLY_LIMIT",
+            "status": "within",
+            "message": "Comparação da carga semanal declarada com o menor limite entre contrato e etapa normativa.",
+            "source_ids": [
+              "ec141"
+            ]
+          },
+          {
+            "code": "DAILY_LIMIT",
+            "status": "within",
+            "message": "Referência diária para esta simulação: 480 minutos líquidos. Compensação diversa exige análise do instrumento aplicável.",
+            "source_ids": [
+              "ec141",
+              "stf8041"
+            ]
+          },
+          {
+            "code": "WEEKLY_RESTS",
+            "status": "within",
+            "message": "Referência: 2 repouso(s) semanal(is) de 24 horas. Dois repousos não significam necessariamente 48 horas consecutivas; interjornada e histórico são verificações próprias.",
+            "source_ids": [
+              "ec141",
+              "portaria2041"
+            ]
+          },
+          {
+            "code": "SALARY_PRESERVATION",
+            "status": "within",
+            "message": "Salário mensal preservado na comparação; o valor da hora pode mudar com o divisor.",
+            "source_ids": [
+              "ec141",
+              "decree13173"
+            ]
+          },
+          {
+            "code": "SCOPE_REVIEW",
+            "status": "review",
+            "message": "Resultado de planejamento, sem aprovação jurídica automática. Verificar pausas, interjornada, trabalho noturno, domingos, qualificações, enquadramento e instrumentos coletivos antes de usar uma escala.",
+            "source_ids": [
+              "ec141",
+              "decree13173",
+              "portaria2041",
+              "stf8041"
+            ]
+          },
+          {
+            "code": "FUTURE_REFERENCE",
+            "status": "review",
+            "message": "Projeção com as fontes verificadas em 25/11/2026. Conferir atos posteriores antes da data de aplicação.",
+            "source_ids": [
+              "ec141",
+              "stf8041"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "ec141",
+            "title": "EC 141/2026",
+            "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm",
+            "articles": "arts. 1º, 2º, 4º, 6º, 7º e 8º"
+          },
+          {
+            "id": "decree13173",
+            "title": "Decreto 13.173/2026",
+            "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13173.htm",
+            "articles": "arts. 2º, 3º, 5º e 7º"
+          },
+          {
+            "id": "portaria2041",
+            "title": "Portaria MTE 2.041/2026",
+            "url": "https://www.in.gov.br/web/dou/-/portaria-mte-n-2.041-de-19-de-novembro-de-2026-745783275",
+            "articles": "arts. 3º, 6º a 10; publicação de 23/11/2026; observar retificação e decisões judiciais"
+          },
+          {
+            "id": "stf8041",
+            "title": "STF · cautelar nas ADIs 8.041 e 8.042",
+            "url": "https://portal.stf.jus.br/processos/downloadPeca.asp?ext=.pdf&id=15392248509",
+            "articles": "decisão de 12/11/2026, dispositivo, itens I, IV, VII e VIII; interpretação sujeita à evolução do processo"
+          }
+        ],
+        "digest": "18956a14525a431474387d9c65516152960aad5f8eef4d54247ae99906b27766"
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 param([string]$RuntimeDir = $env:CHRONOS_RUNTIME_DIR)
 $ErrorActionPreference = 'Stop'
 $projectPath = Split-Path -Parent $PSScriptRoot
-if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\1.0' }
+if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\2.0' }
 $runtimePath = [System.IO.Path]::GetFullPath($RuntimeDir)
 if ($runtimePath.StartsWith($projectPath, [StringComparison]::OrdinalIgnoreCase)) {
     throw 'Escolha CHRONOS_RUNTIME_DIR fora da pasta do projeto/OneDrive para o ambiente e os caches.'

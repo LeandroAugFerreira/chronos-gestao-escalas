@@ -1,1 +1,1 @@
-"""Chronos 1.0 - self-contained local Windows demonstration."""
+"""Chronos 2.0 - self-contained local Windows demonstration."""

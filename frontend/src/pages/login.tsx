@@ -19,14 +19,14 @@ export function LoginPage() {
 
   return <div className="login-page">
     <section className="login-story" aria-labelledby="story-title">
-      <a className="brand" href="/" aria-label="Chronos 1.0"><Brand /></a>
+      <a className="brand" href="/" aria-label="Chronos 2.0"><Brand /></a>
       <div className="story-copy">
         <p className="eyebrow"><span className="edition-index">01 /</span> PESSOAS. TEMPO. POSSIBILIDADES.</p>
         <h1 id="story-title">O tempo encontra<br />seu <em>equilíbrio.</em></h1>
         <p>Por trás de cada jornada, uma pessoa.<br />À frente de cada decisão, uma nova possibilidade.</p>
       </div>
       <TimeDial />
-      <div className="story-footer"><AuthorSignature /><span>CHRONOS 1.0<br /><b>Feito para conectar.</b></span></div>
+      <div className="story-footer"><AuthorSignature /><span>CHRONOS 2.0<br /><b>Feito para conectar.</b></span></div>
     </section>
     <main className="login-main">
       <div className="login-card">
@@ -48,7 +48,7 @@ export function LoginPage() {
         <div className="login-footnote"><ShieldCheck size={17} /><span>Ambiente de demonstração<br /><b>Dados fictícios. Possibilidades reais de explorar.</b></span></div>
       </div>
       <div className="login-mobile-signature"><AuthorSignature /></div>
-      <p className="login-copyright">Chronos 1.0 — Gestão Inteligente de Jornadas e Escalas</p>
+      <p className="login-copyright">Chronos 2.0 — Gestão Inteligente de Jornadas e Escalas</p>
     </main>
   </div>
 }

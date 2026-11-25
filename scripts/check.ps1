@@ -1,7 +1,7 @@
 param([string]$RuntimeDir = $env:CHRONOS_RUNTIME_DIR)
 $ErrorActionPreference = 'Stop'
 $projectPath = Split-Path -Parent $PSScriptRoot
-if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\1.0' }
+if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\2.0' }
 $pythonPath = Join-Path $RuntimeDir 'venv\Scripts\python.exe'
 & $pythonPath (Join-Path $projectPath 'backend\scripts\generate_demo.py') --check
 if ($LASTEXITCODE -ne 0) { throw 'Fixture inválida.' }

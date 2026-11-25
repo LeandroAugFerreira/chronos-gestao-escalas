@@ -87,7 +87,7 @@ def run(url, folder, bundle, factory):
         assert connection.execute("pragma foreign_key_check").fetchall() == []
         assert connection.execute("select count(*) from employees").fetchone()[0] == 350
         assert connection.execute("select count(*) from users").fetchone()[0] == 2
-    (folder / "self-test.json").write_text(json.dumps({"product": "Chronos 1.0", "frozen": bool(getattr(sys, "frozen", False)),
+    (folder / "self-test.json").write_text(json.dumps({"product": "Chronos 2.0", "frozen": bool(getattr(sys, "frozen", False)),
         "frontend_spa": True, "csrf_login_logout": True, "demo_read_only": True, "administrator_created": True,
         "optimization_queue": "succeeded", "ortools_probe": "OPTIMAL", "seed_idempotent": True, "database_integrity": "ok",
         "tk_initialized": True, "n8n": False, "scheduler": False}, indent=2), encoding="utf-8")

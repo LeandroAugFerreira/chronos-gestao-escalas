@@ -10,7 +10,7 @@ DEMO_PASSWORD = "ChronosDemo@2026"
 
 def data_folder(value=None):
     from app.core.config import PROJECT_ROOT
-    path = Path(value) if value else Path(os.environ.get("LOCALAPPDATA", str(Path.home()))) / "Chronos" / "1.0-demo"
+    path = Path(value) if value else Path(os.environ.get("LOCALAPPDATA", str(Path.home()))) / "Chronos" / "2.0-demo"
     path = path.resolve()
     if path.is_relative_to(PROJECT_ROOT) or "onedrive" in str(path).lower():
         raise ValueError("Escolha uma pasta de dados fora do projeto, do executável e do OneDrive.")

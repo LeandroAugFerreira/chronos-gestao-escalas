@@ -1,6 +1,6 @@
 param([string]$RuntimeDir = $env:CHRONOS_RUNTIME_DIR)
 $ErrorActionPreference = 'Stop'
-if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\1.0' }
+if (-not $RuntimeDir) { $RuntimeDir = Join-Path $env:LOCALAPPDATA 'Chronos\2.0' }
 $runtimePath = [IO.Path]::GetFullPath($RuntimeDir)
 $projectPath = Split-Path -Parent $PSScriptRoot
 $securityStatus = Get-Content -LiteralPath (Join-Path $projectPath 'automation\n8n\security-status.json') -Raw | ConvertFrom-Json

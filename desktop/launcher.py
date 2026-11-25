@@ -1,4 +1,4 @@
-"""Chronos 1.0 desktop entry point. Application state is always per installation."""
+"""Chronos 2.0 desktop entry point. Application state is always per installation."""
 import argparse
 import ctypes
 import hashlib
@@ -51,7 +51,7 @@ def main():
         from desktop.solver import solve_files
         solve_files(sys.argv[2], sys.argv[3])
         return 0
-    parser = argparse.ArgumentParser(description="Chronos 1.0 — demonstração para Windows")
+    parser = argparse.ArgumentParser(description="Chronos 2.0 — demonstração para Windows")
     parser.add_argument("--data-dir", type=Path)
     parser.add_argument("--self-test", action="store_true")
     parser.add_argument("--no-browser", action="store_true")
@@ -140,7 +140,7 @@ def main():
         if args.self_test:
             (folder / "self-test-error.json").write_text(json.dumps({"type": type(error).__name__, "message": str(error)}), encoding="utf-8")
         elif os.name == "nt":
-            ctypes.windll.user32.MessageBoxW(None, "Não foi possível abrir o Chronos. Consulte o log em:\n" + str(folder), "Chronos 1.0", 16)
+            ctypes.windll.user32.MessageBoxW(None, "Não foi possível abrir o Chronos. Consulte o log em:\n" + str(folder), "Chronos 2.0", 16)
         return 1
     finally:
         if trace_stream:
