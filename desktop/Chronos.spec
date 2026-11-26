@@ -9,6 +9,7 @@ datas = [(str(root / 'frontend/dist'), 'frontend/dist'),
     (str(root / 'desktop/solver-probe.json'), 'desktop'),
     (str(site / 'chronos-manual.html'), 'help'),
     (str(site / 'assets/chronos.css'), 'help/assets'),
+    (str(site / 'assets/chronos-v2-palette.css'), 'help/assets'),
     (str(site / 'img/chronos-mark.svg'), 'help/img')]
 for source in (root / 'backend/alembic').rglob('*'):
     if source.is_file() and source.suffix in ('.py', '.mako') and '__pycache__' not in source.parts:

@@ -43,3 +43,7 @@ O executável 2.0 usa a pasta `Chronos/2.0-demo`, separada da demonstração 1.0
 Testes novos cobrem viradas de vigência, divisor mais favorável, salário preservado, contratos menores, hipótese de 8h24, regimes especiais, compensação, rejeição de dados inválidos, autorização da API e digests. O frontend testa submissão, resultado, falha de rede e remoção de comparação desatualizada. Evidências finais e números de testes são registrados ao concluir a entrega.
 
 Para reproduzir a fixture do tour: `python backend/scripts/export_transition_demo.py --check`. A integração n8n e os gates de produção da base não foram liberados por esta atualização.
+
+## Paleta visual aprovada — 25/11/2026
+
+Ações em azul cobalto (#2563EB), destaques em azul claro e turquesa e fundos neutros nos temas claro e escuro. O desenho original do relógio, os arquivos SVG/ICO e a tipografia foram preservados. A apresentação, o manual e o executável da versão 2.0 acompanham a paleta; os arquivos da versão 1.0 conservam a identidade anterior. A revisão se limita à apresentação visual e não altera cálculos, permissões ou regras de jornada.

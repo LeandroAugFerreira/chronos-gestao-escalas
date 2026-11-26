@@ -1,37 +1,39 @@
-/* Chronos 1.0 · Pessoas e tempo, em equilíbrio.
-   Azul de tinta, cobre e papel: identidade independente do segmento da organização. */
+/* Chronos 2.0 · Pessoas e tempo, em equilíbrio.
+   Cobalto, turquesa e fundos neutros. Desenho original do relógio preservado. */
 :root {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  --bg: #151e27;
-  --sidebar: #101c26;
-  --panel: #1b2833;
-  --text: #f0eee8;
-  --muted: #b0bfc8;
-  --line: #354550;
-  --accent: #e9b98c;
-  --soft: #2b3740;
+  --bg: #0b1220;
+  --sidebar: #0d172a;
+  --panel: #131f33;
+  --text: #f1f5ff;
+  --muted: #b5c1d5;
+  --line: #30425e;
+  --accent: #81b1ff;
+  --soft: #172c4b;
   --danger: #ffadb5;
-  --secondary-accent: #9acbc5;
-  --control-line: #71858e;
+  --secondary-accent: #2dd4bf;
+  --control-line: #6f84a3;
+  --action: #2563eb;
+  --action-text: #ffffff;
   --display-font: Georgia, 'Times New Roman', serif;
 }
 .app[data-theme=light] {
-  --bg: #f2efe8;
-  --sidebar: #101c26;
-  --panel: #fffdf9;
-  --text: #23343d;
-  --muted: #5a6970;
-  --line: #d7d5ca;
-  --accent: #91552d;
-  --soft: #eae5da;
+  --bg: #f4f7fc;
+  --sidebar: #0d172a;
+  --panel: #ffffff;
+  --text: #17243b;
+  --muted: #52627a;
+  --line: #cfdaeb;
+  --accent: #1d4ed8;
+  --soft: #e7eefc;
   --danger: #a72e43;
-  --secondary-accent: #286c67;
-  --control-line: #838985;
+  --secondary-accent: #087d76;
+  --control-line: #71839e;
 }
 .brand { gap: 12px; letter-spacing: -1.7px; font-weight: 400; }
 .brand .chronos-mark { width: 43px; height: 43px; flex-shrink: 0; color: var(--accent); }
 .brand-wordmark { font-family: var(--display-font); font-size: 37px; line-height: 1; }
-.brand-period { color: var(--accent); }
+.brand-period { color: var(--secondary-accent); }
 .brand small { font-family: 'Segoe UI', system-ui, sans-serif; font-size: 8px; letter-spacing: 1.1px; margin-top: 9px; line-height: 1.7; }
 .author-signature { display: flex; gap: 11px; align-items: center; flex-shrink: 0; }
 .author-monogram { display: flex; align-items: center; justify-content: center; width: 37px; height: 37px; border: 1px solid currentColor; border-radius: 50%; font-family: var(--display-font); font-size: 22px; letter-spacing: -3px; padding-right: 3px; color: var(--accent); }
@@ -41,7 +43,7 @@
 .author-signature b { font-size: 12px; letter-spacing: .1px; font-weight: 500; }
 .sidebar {
   width: 270px; padding: 31px 22px 18px;
-  --text: #efece4; --muted: #b0bfc8; --accent: #e9b98c; --line: #354550; --soft: #26343d;
+  --text: #f1f5ff; --muted: #b5c1d5; --accent: #81b1ff; --secondary-accent: #2dd4bf; --line: #30425e; --soft: #172c4b;
   color: var(--text); border-right: 0; height: 100dvh; overflow: hidden;
 }
 .workspace-label { margin: 30px 0 13px; font-size: 9px; }
@@ -50,10 +52,10 @@
 .workspace>div { min-width: 0; }
 .workspace b { font-size: 12px; overflow-wrap: anywhere; }
 .workspace small { font-size: 10px; line-height: 1.6; }
-.main-navigation { display: block; overflow-y: auto; overscroll-behavior: contain; flex: 1; min-height: 80px; margin: 4px -10px 0; padding: 0 8px; scrollbar-width: thin; scrollbar-color: #51606b transparent; }
+.main-navigation { display: block; overflow-y: auto; overscroll-behavior: contain; flex: 1; min-height: 80px; margin: 4px -10px 0; padding: 0 8px; scrollbar-width: thin; scrollbar-color: #6f84a3 transparent; }
 .nav-label { margin: 23px 12px 11px; text-transform: uppercase; font-size: 9px; letter-spacing: 1.5px; }
 .main-navigation a { position: relative; border-radius: 4px; padding: 11px 12px; font-size: 12px; margin: 3px 0; gap: 11px; line-height: 1.5; }
-.main-navigation a.active { background: #e9b98c13; color: var(--accent); }
+.main-navigation a.active { background: #81b1ff13; color: var(--accent); }
 .main-navigation a.active:before { content: ''; position: absolute; left: 0; width: 2px; height: 18px; background: var(--accent); }
 .main-navigation a>svg { stroke-width: 1.6; flex-shrink: 0; }
 .sidebar-bottom { flex-shrink: 0; padding-top: 20px; }
@@ -131,8 +133,8 @@ main#conteudo { padding: 38px 40px 24px; }
 /* Controles e leitura seguem a mesma linguagem em todos os módulos. */
 input, select, textarea { border-radius: 4px; font-size: 13px; border-color: var(--control-line); }
 .button { border-radius: 4px; font-size: 12px; padding: 11px 16px; min-height: 40px; }
-.button.primary { color: #19252c; }
-.app[data-theme=light] .button.primary { color: #fffdf9; }
+.primary, .button.primary { background: var(--action); border-color: var(--action); color: var(--action-text); }
+.app[data-theme=light] .button.primary { color: #ffffff; }
 .button.primary:hover { filter: brightness(1.08); }
 .secondary { background: transparent; }
 .icon-button { min-width: 36px; min-height: 36px; }
@@ -159,9 +161,9 @@ th { font-size: 10px; letter-spacing: .5px; background: var(--soft); }
 .initial-loading>.chronos-mark { width: 54px; height: 54px; }
 .app[data-theme=light] .skip-link { color: #fff; }
 /* Entrada: uma composição editorial com mostrador original, sem imagens externas. */
-.login-page { grid-template-columns: 1.1fr 1fr; --bg: #f5f1e9; --panel: #fffcf7; --text: #24343c; --muted: #606b70; --line: #c7c7be; --accent: #91552d; --soft: #eae5da; --danger: #a72e43; --secondary-accent: #286c67; color-scheme: light; }
-.login-story { --accent: #e9b98c; --text: #f0eee8; --muted: #b0bfc8; --line: #354550; --soft: #26343d; background: #101f2a; color: var(--text); padding: 42px clamp(32px, 4.5vw, 72px) 30px; min-height: 800px; }
-.login-story:before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(#e9b98c07 1px, transparent 1px), linear-gradient(90deg, #e9b98c07 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(120deg, transparent, #000); pointer-events: none; }
+.login-page { grid-template-columns: 1.1fr 1fr; --bg: #f4f7fc; --panel: #ffffff; --text: #17243b; --muted: #52627a; --line: #cfdaeb; --accent: #1d4ed8; --soft: #e7eefc; --danger: #a72e43; --secondary-accent: #087d76; color-scheme: light; }
+.login-story { --accent: #81b1ff; --text: #f1f5ff; --muted: #b5c1d5; --line: #30425e; --soft: #172c4b; background: #0b1220; color: var(--text); padding: 42px clamp(32px, 4.5vw, 72px) 30px; min-height: 800px; }
+.login-story:before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(#81b1ff07 1px, transparent 1px), linear-gradient(90deg, #81b1ff07 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(120deg, transparent, #000); pointer-events: none; }
 .login-story>.brand { position: relative; z-index: 1; }
 .login-story .brand { font-size: 37px; }
 .login-story .brand small { font-size: 8px; max-width: 230px; letter-spacing: .8px; }
@@ -169,8 +171,8 @@ th { font-size: 10px; letter-spacing: .5px; background: var(--soft); }
 .edition-index { color: var(--muted); margin-right: 12px; }
 .story-copy h1 { font-family: var(--display-font); font-size: clamp(45px, 4.8vw, 73px); line-height: 1.08; letter-spacing: -2.7px; font-weight: 400; margin: 27px 0 26px; }
 .story-copy h1 em { color: var(--accent); font-weight: 400; }
-.story-copy>p:not(.eyebrow) { color: #c3cdd1; font-size: 14px; line-height: 1.9; max-width: 390px; margin-top: 0; }
-.time-dial { position: absolute; color: #e9b98c; width: clamp(290px, 30vw, 420px); right: -70px; bottom: 95px; }
+.story-copy>p:not(.eyebrow) { color: #b5c1d5; font-size: 14px; line-height: 1.9; max-width: 390px; margin-top: 0; }
+.time-dial { position: absolute; color: #81b1ff; width: clamp(290px, 30vw, 420px); right: -70px; bottom: 95px; }
 .time-dial svg { display: block; width: 100%; height: auto; }
 .time-dial text { fill: currentColor; font-size: 9px; letter-spacing: 3px; font-family: 'Segoe UI', system-ui, sans-serif; }
 .time-dial text:last-child { font-size: 7px; letter-spacing: 2px; opacity: .7; }
@@ -186,13 +188,13 @@ th { font-size: 10px; letter-spacing: .5px; background: var(--soft); }
 .login-card .subtitle { font-size: 13px; line-height: 1.8; margin-bottom: 32px; }
 .login-card .field { margin-bottom: 20px; gap: 9px; }
 .login-card .field label { font-size: 12px; }
-.login-card input { min-height: 46px; padding: 12px 14px; background: #fffcf7; border-color: #838985; font-size: 14px; color: #24343c; border-radius: 4px; }
+.login-card input { min-height: 46px; padding: 12px 14px; background: #ffffff; border-color: #71839e; font-size: 14px; color: #17243b; border-radius: 4px; }
 .login-card input[aria-invalid=true] { border-color: var(--danger); }
 .password-field { position: relative; }
 .password-field input { padding-right: 52px; }
 .password-toggle { position: absolute; top: 28px; right: 6px; }
-.login-submit { background: #233e49; color: #fffdf7 !important; min-height: 49px; border-radius: 4px; font-size: 13px; margin-top: 8px; }
-.login-submit>svg { color: #e9b98c; }
+.login-submit { background: #2563eb; color: #ffffff !important; min-height: 49px; border-radius: 4px; font-size: 13px; margin-top: 8px; }
+.login-submit>svg { color: #ffffff; }
 .login-footnote { justify-content: flex-start; border-top: 1px solid var(--line); padding-top: 23px; margin-top: 28px; gap: 12px; font-size: 11px; line-height: 1.8; }
 .login-footnote>svg { flex-shrink: 0; color: var(--secondary-accent); }
 .login-footnote b { font-weight: 400; font-size: 10px; }
